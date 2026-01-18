@@ -384,14 +384,89 @@
         inset: 0;
         z-index: 0;
       }
-      /* Poster image - shows immediately */
+      /* Beautiful animated poster - shows IMMEDIATELY */
       .hero-bg-poster {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%);
         z-index: 1;
+        /* Stadium-like gradient background */
+        background: 
+          radial-gradient(ellipse 120% 80% at 50% 120%, rgba(34, 139, 34, 0.15) 0%, transparent 50%),
+          radial-gradient(ellipse 100% 60% at 50% 0%, rgba(212, 168, 75, 0.08) 0%, transparent 40%),
+          linear-gradient(180deg, #0a0a0a 0%, #0d1117 30%, #0a0a0a 100%);
+        overflow: hidden;
+      }
+      /* Animated light sweep effect */
+      .hero-bg-poster::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(212, 168, 75, 0.03), rgba(255,255,255,0.02), transparent);
+        animation: lightSweep 4s ease-in-out infinite;
+      }
+      /* Subtle particle/bokeh effect */
+      .hero-bg-poster::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: 
+          radial-gradient(circle at 20% 30%, rgba(212, 168, 75, 0.1) 0%, transparent 1%),
+          radial-gradient(circle at 80% 20%, rgba(212, 168, 75, 0.08) 0%, transparent 1.5%),
+          radial-gradient(circle at 40% 70%, rgba(212, 168, 75, 0.06) 0%, transparent 1%),
+          radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.05) 0%, transparent 1%),
+          radial-gradient(circle at 30% 50%, rgba(212, 168, 75, 0.07) 0%, transparent 2%),
+          radial-gradient(circle at 90% 80%, rgba(212, 168, 75, 0.05) 0%, transparent 1%),
+          radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%);
+        animation: bokehFloat 8s ease-in-out infinite alternate;
+      }
+      @keyframes lightSweep {
+        0%, 100% { left: -100%; opacity: 0; }
+        50% { left: 100%; opacity: 1; }
+      }
+      @keyframes bokehFloat {
+        0% { transform: translateY(0) scale(1); opacity: 0.6; }
+        100% { transform: translateY(-10px) scale(1.05); opacity: 1; }
+      }
+      /* Loading indicator */
+      .hero-loading-indicator {
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+      .hero-loading-indicator.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(212, 168, 75, 0.2);
+        border-top-color: var(--gold);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      .loading-text {
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: rgba(212, 168, 75, 0.7);
+        font-family: 'Oswald', sans-serif;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
       }
       .hero-bg video {
         position: absolute;
@@ -401,17 +476,15 @@
         object-fit: cover;
         filter: brightness(0.7);
         transform: scale(1.1);
-        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
           filter 0.8s ease;
         transform-origin: center;
         z-index: 2;
         /* HIDE VIDEO COMPLETELY until it's playing */
         opacity: 0;
-        visibility: hidden;
       }
       .hero-bg video.is-playing {
         opacity: 1;
-        visibility: visible;
       }
       .hero-overlay {
         position: absolute;
@@ -3819,9 +3892,14 @@
     </nav>
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <!-- Dark background shows immediately - NO play button ever -->
-        <div class="hero-bg-poster" id="heroBgPoster"></div>
-        <video autoplay muted loop playsinline webkit-playsinline preload="metadata" id="heroBgVideo">
+        <!-- Beautiful animated background shows IMMEDIATELY -->
+        <div class="hero-bg-poster" id="heroBgPoster">
+          <div class="hero-loading-indicator" id="heroLoadingIndicator">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading Experience</div>
+          </div>
+        </div>
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto" id="heroBgVideo">
           <source
             src="https://res.cloudinary.com/dnh5afyja/video/upload/v1768736469/video_compresed_ubc5yy.mp4"
             type="video/mp4"
@@ -4412,22 +4490,26 @@ India's first true luxury travel platform, offering the most personalized and ex
     </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
       // =====================================================
-      // VIDEO AUTOPLAY FIX - HIDES PLAY BUTTON COMPLETELY
+      // VIDEO AUTOPLAY FIX - BEAUTIFUL LOADING STATE
       // =====================================================
       (function() {
         const video = document.getElementById('heroBgVideo');
-        const poster = document.getElementById('heroBgPoster');
+        const loadingIndicator = document.getElementById('heroLoadingIndicator');
         if (!video) return;
 
         function showVideo() {
           video.classList.add('is-playing');
+          // Hide loading indicator
+          if (loadingIndicator) {
+            loadingIndicator.classList.add('hidden');
+          }
         }
 
         function tryPlay() {
           const playPromise = video.play();
           if (playPromise !== undefined) {
             playPromise.then(showVideo).catch(function() {
-              // Autoplay blocked - poster stays visible, no play button shown
+              // Autoplay blocked - beautiful animated poster stays visible
             });
           }
         }
@@ -4436,6 +4518,7 @@ India's first true luxury travel platform, offering the most personalized and ex
         video.addEventListener('playing', showVideo);
         
         // Try to play when ready
+        video.addEventListener('canplay', tryPlay);
         video.addEventListener('canplaythrough', tryPlay);
         
         // Also try on load

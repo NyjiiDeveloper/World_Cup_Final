@@ -383,7 +383,6 @@
         position: absolute;
         inset: 0;
         z-index: 0;
-        background: #000;
       }
       .hero-bg video {
         width: 100%;
@@ -3801,7 +3800,7 @@
     </nav>
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <video autoplay muted loop playsinline webkit-playsinline preload="auto" id="heroBgVideo">
+        <video autoplay muted loop playsinline id="heroBgVideo">
           <source
             src="https://res.cloudinary.com/dnh5afyja/video/upload/v1768736469/video_compresed_ubc5yy.mp4"
             type="video/mp4"
@@ -4390,61 +4389,12 @@ India's first true luxury travel platform, offering the most personalized and ex
         <p>©2025 Vara5 Journeys Pvt. Ltd. All Rights Reserved. Confidential and Proprietary Information</p>
       </div>
     </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-      // =====================================================
-      // PRELOADER - ONLY HIDES WHEN VIDEO IS ACTUALLY PLAYING
-      // =====================================================
-      (function() {
-        const video = document.getElementById('heroBgVideo');
-        const preloader = document.getElementById('preloader');
-        
-        if (!video || !preloader) return;
-
-        let isHidden = false;
-
-        function hidePreloader() {
-          if (isHidden) return;
-          isHidden = true;
-          preloader.classList.add('hidden');
-        }
-
-        // ONLY hide preloader when video is ACTUALLY playing
-        video.addEventListener('playing', function() {
-          // Small delay to ensure video frame is visible
-          setTimeout(hidePreloader, 300);
-        });
-
-        // Try to play video
-        function tryPlay() {
-          video.play().catch(function() {});
-        }
-
-        // Try when video has enough data
-        video.addEventListener('canplay', tryPlay);
-        video.addEventListener('canplaythrough', tryPlay);
-        video.addEventListener('loadeddata', tryPlay);
-
-        // Try on page load
-        window.addEventListener('load', function() {
-          tryPlay();
-        });
-
-        // Try on user interaction (critical for mobile)
-        ['touchstart', 'click', 'scroll'].forEach(function(evt) {
-          document.addEventListener(evt, tryPlay, { passive: true });
-        });
-
-        // Fallback: if video never plays after 20 seconds, hide preloader anyway
-        setTimeout(function() {
-          if (!isHidden) {
-            console.log('Fallback: hiding preloader after timeout');
-            hidePreloader();
-          }
-        }, 20000);
-
-      })();
-      // =====================================================
-
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").classList.add("hidden");
+        }, 1500);
+      });
       const audio = document.getElementById("bgMusic"),
         audioControl = document.getElementById("audioControl");
       let isPlaying = false,

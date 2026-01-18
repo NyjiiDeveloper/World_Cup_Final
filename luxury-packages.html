@@ -1,0 +1,3358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury World Cup Programs | VARA5</title>
+  <meta name="description" content="Exclusive World Cup 2026 luxury packages with premium match tickets, 5-star hotels, private transfers. Follow your team or experience the finals with VARA5.">
+
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294600/logo_favicon_1_inrvfo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #d4a84b;
+      --gold-light: #e8c97a;
+      --gold-dark: #b8942f;
+      --dark: #0d0d0d;
+      --darker: #070707;
+      --white: #fff;
+      --red: #c41e3a;
+      --accent: #1db954;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: var(--darker);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--darker);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 3px;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1.25rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      background: rgba(7, 7, 7, 0.9);
+      backdrop-filter: blur(30px);
+      border-bottom: 1px solid rgba(212, 168, 75, 0.1);
+    }
+
+    .logo-text img {
+      width: 7rem;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--dark) !important;
+      padding: 10px 20px !important;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold) !important;
+    }
+
+    .back-link svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* Hero Section */
+    .hero-packages {
+      position: relative;
+      height: 70vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+      transform: scale(1.1);
+      transition: transform 8s ease;
+    }
+
+    .hero-packages:hover .hero-bg img {
+      transform: scale(1.15);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7, 7, 7, 0.3) 0%, rgba(7, 7, 7, 0.7) 50%, rgba(7, 7, 7, 0.95) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 1.5rem;
+      background: rgba(212, 168, 75, 0.1);
+      border: 1px solid rgba(212, 168, 75, 0.3);
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title span {
+      display: block;
+      font-weight: 300;
+      font-size: 0.5em;
+      letter-spacing: 12px;
+      color: var(--gold);
+      margin-top: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .fixture-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .fixture-btn:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--dark);
+    }
+
+    .fixture-btn svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* Why Choose Section */
+    .why-choose {
+      padding: 6rem 5%;
+      background: var(--darker);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-choose::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212, 168, 75, 0.3), transparent);
+    }
+
+    .why-choose-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .why-choose-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .section-tag-journey {
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .why-choose-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .why-choose-content h3 {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .why-choose-content h3 span {
+      color: var(--gold);
+    }
+
+    .why-choose-content p {
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .scarcity-callout {
+      background: linear-gradient(135deg, rgba(196, 30, 58, 0.15), rgba(196, 30, 58, 0.05));
+      border: 1px solid rgba(196, 30, 58, 0.3);
+      border-left: 3px solid var(--red);
+      padding: 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin-top: 2rem;
+    }
+
+    .scarcity-callout h4 {
+      font-family: "Oswald", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .scarcity-callout h4::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--red);
+      border-radius: 50%;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .scarcity-callout p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .why-choose-features {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.5rem;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      transition: all 0.4s;
+    }
+
+    .feature-item:hover {
+      border-color: rgba(212, 168, 75, 0.2);
+      transform: translateX(10px);
+    }
+
+    .feature-item.clickable {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .feature-item.clickable::after {
+      content: '';
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4a84b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+    .feature-item.clickable:hover::after {
+      opacity: 1;
+      right: 1rem;
+    }
+
+    .feature-item.clickable:hover {
+      border-color: rgba(212, 168, 75, 0.4);
+      background: linear-gradient(145deg, rgba(212, 168, 75, 0.08), rgba(212, 168, 75, 0.02));
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-item.clickable .feature-text h4 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .feature-item.clickable .feature-text .view-hint {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: var(--gold);
+      opacity: 0.7;
+      text-transform: uppercase;
+      transition: opacity 0.3s;
+    }
+
+    .feature-item.clickable:hover .feature-text .view-hint {
+      opacity: 1;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(212, 168, 75, 0.1);
+      border: 1px solid rgba(212, 168, 75, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+
+    .feature-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .feature-text h4 {
+      font-family: "Oswald", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-text p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Hotels Section */
+    .hotels-section {
+      padding: 6rem 5%;
+      background: linear-gradient(180deg, var(--dark), var(--darker));
+      position: relative;
+    }
+
+    .hotels-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .hotels-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .hotels-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .hotels-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .hotel-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(212, 168, 75, 0.3);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .hotel-image {
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .hotel-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+
+    .hotel-card:hover .hotel-image img {
+      transform: scale(1.1);
+    }
+
+    .hotel-content {
+      padding: 1.5rem;
+    }
+
+    .hotel-city {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .hotel-name {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .hotel-desc {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .hotel-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    /* Seating Section */
+    .seating-section {
+      padding: 6rem 5%;
+      background: var(--darker);
+      position: relative;
+    }
+
+    .seating-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .seating-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .stadium-selector {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+
+    .stadium-selector label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    .stadium-select {
+      width: 100%;
+      padding: 1.1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(212, 168, 75, 0.3);
+      border-radius: 12px;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23D4A84B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1.25rem center;
+      transition: all 0.3s;
+    }
+
+    .stadium-select:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(212, 168, 75, 0.1);
+    }
+
+    .stadium-select option {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .stadium-map-container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .stadium-map-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .seating-legend {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+    }
+
+    .legend-color.premium { background: var(--gold); }
+    .legend-color.category1 { background: #4CAF50; }
+    .legend-color.available { background: rgba(255, 255, 255, 0.3); }
+
+    .seating-note {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: rgba(212, 168, 75, 0.08);
+      border: 1px solid rgba(212, 168, 75, 0.2);
+      border-radius: 12px;
+    }
+
+    .seating-note p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .seating-note strong {
+      color: var(--gold);
+    }
+
+    /* Offerings Section */
+    .offerings {
+      padding: 6rem 5%;
+      background: linear-gradient(180deg, var(--darker), var(--dark));
+      position: relative;
+    }
+
+    .offerings-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .offerings-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-subtitle {
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .offering-card {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offering-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(212, 168, 75, 0.2);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .offering-card .limited-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .offering-image {
+      width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .offering-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .offering-card:hover .offering-image img {
+      transform: scale(1.1);
+    }
+
+    .offering-card h3 {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .offering-card p {
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.7;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .offering-card ul {
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.7;
+      font-size: 0.9rem;
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .offering-price-text {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background: rgba(212, 168, 75, 0.08);
+      border-left: 2px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      line-height: 1.5;
+    }
+
+    .offering-price-text strong {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .offering-price {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .offering-slots {
+      font-size: 0.75rem;
+      color: var(--red);
+      margin-top: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .offering-slots .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--red);
+      border-radius: 50%;
+      animation: blink 1s infinite;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.4s;
+      border: none;
+      display: inline-block;
+    }
+
+    .btn-urgent {
+      background: linear-gradient(90deg, var(--red), #8b1a2d);
+      /* background: linear-gradient(to left,#a9bbc8, #202e44); */
+
+      color: var(--white);
+    }
+
+    .btn-urgent:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(196, 30, 58, 0.3);
+    }
+
+    /* Contact Form Section */
+    .contact-section {
+      padding: 6rem 5%;
+      background: var(--dark);
+      position: relative;
+    }
+
+    .contact-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 24px;
+      padding: 3rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0.75rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 1.1rem 1.25rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: rgba(212, 168, 75, 0.05);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23D4A84B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1.25rem center;
+    }
+
+    .form-group select option {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .contact-form .btn {
+      width: 100%;
+      padding: 1.25rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 3rem 5%;
+      background: var(--darker);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    footer p {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 0.85rem;
+    }
+
+    footer .logo-text img {
+      width: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 1024px) {
+      .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .hotels-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .offerings-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem 5%;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-packages {
+        height: 60vh;
+        min-height: 400px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+      }
+
+      .hotels-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 1.5rem;
+      }
+
+      .seating-legend {
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .feature-item {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .feature-icon {
+        margin: 0 auto;
+      }
+    }
+
+  /* Schedule Modal */
+.schedule-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.schedule-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.schedule-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.schedule-modal-container {
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  max-height: 90vh;
+  background: linear-gradient(145deg, rgba(13, 13, 13, 0.98), rgba(7, 7, 7, 0.98));
+  border: 1px solid rgba(212, 168, 75, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.schedule-modal.active .schedule-modal-container {
+  transform: scale(1) translateY(0);
+}
+
+.schedule-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, rgba(212, 168, 75, 0.1), rgba(212, 168, 75, 0.02));
+  border-bottom: 1px solid rgba(212, 168, 75, 0.15);
+}
+
+.schedule-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.schedule-modal-title svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--gold);
+  fill: none;
+}
+
+.schedule-modal-title h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.schedule-modal-title span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 0.3rem 0.75rem;
+  background: rgba(212, 168, 75, 0.15);
+  border-radius: 20px;
+}
+
+.schedule-modal-close {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.schedule-modal-close:hover {
+  background: rgba(212, 168, 75, 0.2);
+  border-color: var(--gold);
+  transform: rotate(90deg);
+}
+
+.schedule-modal-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: rgba(255, 255, 255, 0.7);
+  fill: none;
+  stroke-width: 2;
+  transition: all 0.3s;
+}
+
+.schedule-modal-close:hover svg {
+  stroke: var(--gold);
+}
+
+.schedule-modal-body {
+  padding: 2rem;
+  max-height: calc(90vh - 100px);
+  overflow-y: auto;
+}
+
+.schedule-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.schedule-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(212, 168, 75, 0.3);
+  border-radius: 3px;
+}
+
+.schedule-modal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+.schedule-image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.schedule-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.schedule-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(212, 168, 75, 0.08);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.schedule-note svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--gold);
+  fill: none;
+  flex-shrink: 0;
+}
+
+.schedule-note p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.schedule-note strong {
+  color: var(--gold);
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .schedule-modal-container {
+    width: 98%;
+    max-height: 95vh;
+    border-radius: 16px;
+  }
+
+  .schedule-modal-header {
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .schedule-modal-title h3 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .schedule-modal-body {
+    padding: 1rem;
+  }
+
+  .schedule-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Hotels Modal Styles */
+.hotels-modal,
+.seating-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hotels-modal.active,
+.seating-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hotels-modal-overlay,
+.seating-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(15px);
+}
+
+.hotels-modal-container,
+.seating-modal-container {
+  position: relative;
+  width: 95%;
+  max-width: 1300px;
+  max-height: 90vh;
+  background: linear-gradient(145deg, rgba(13, 13, 13, 0.98), rgba(7, 7, 7, 0.98));
+  border: 1px solid rgba(212, 168, 75, 0.2);
+  border-radius: 24px;
+  overflow: hidden;
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 168, 75, 0.1);
+}
+
+.hotels-modal.active .hotels-modal-container,
+.seating-modal.active .seating-modal-container {
+  transform: scale(1) translateY(0);
+}
+
+.hotels-modal-header,
+.seating-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 2.5rem;
+  background: linear-gradient(135deg, rgba(212, 168, 75, 0.12), rgba(212, 168, 75, 0.03));
+  border-bottom: 1px solid rgba(212, 168, 75, 0.15);
+}
+
+.hotels-modal-title,
+.seating-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hotels-modal-title svg,
+.seating-modal-title svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.hotels-modal-title h3,
+.seating-modal-title h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.hotels-modal-title span,
+.seating-modal-title span {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 0.35rem 0.9rem;
+  background: rgba(212, 168, 75, 0.15);
+  border: 1px solid rgba(212, 168, 75, 0.2);
+  border-radius: 20px;
+}
+
+.hotels-modal-close,
+.seating-modal-close {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hotels-modal-close:hover,
+.seating-modal-close:hover {
+  background: rgba(212, 168, 75, 0.2);
+  border-color: var(--gold);
+  transform: rotate(90deg);
+}
+
+.hotels-modal-close svg,
+.seating-modal-close svg {
+  width: 22px;
+  height: 22px;
+  stroke: rgba(255, 255, 255, 0.7);
+  fill: none;
+  stroke-width: 2;
+  transition: all 0.3s;
+}
+
+.hotels-modal-close:hover svg,
+.seating-modal-close:hover svg {
+  stroke: var(--gold);
+}
+
+.hotels-modal-body,
+.seating-modal-body {
+  padding: 2.5rem;
+  max-height: calc(90vh - 100px);
+  overflow-y: auto;
+}
+
+.hotels-modal-body::-webkit-scrollbar,
+.seating-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hotels-modal-body::-webkit-scrollbar-thumb,
+.seating-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(212, 168, 75, 0.3);
+  border-radius: 3px;
+}
+
+.hotels-modal-body::-webkit-scrollbar-thumb:hover,
+.seating-modal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Hotels Grid in Modal */
+.modal-hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.modal-hotel-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-hotel-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 168, 75, 0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.modal-hotel-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.modal-hotel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.modal-hotel-card:hover .modal-hotel-image img {
+  transform: scale(1.08);
+}
+
+.modal-hotel-content {
+  padding: 1.25rem;
+}
+
+.modal-hotel-city {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.modal-hotel-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.modal-hotel-tag {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  background: var(--gold);
+  color: var(--dark);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.35rem 0.7rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.modal-hotels-note {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(212, 168, 75, 0.08);
+  border: 1px solid rgba(212, 168, 75, 0.15);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-hotels-note svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--gold);
+  fill: none;
+  flex-shrink: 0;
+}
+
+.modal-hotels-note p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.modal-hotels-note strong {
+  color: var(--gold);
+}
+
+/* Seating Modal Specific */
+.modal-stadium-selector {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.modal-stadium-selector label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.modal-stadium-select {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 168, 75, 0.3);
+  border-radius: 12px;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23D4A84B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.25rem center;
+  transition: all 0.3s;
+}
+
+.modal-stadium-select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(212, 168, 75, 0.1);
+}
+
+.modal-stadium-select option {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.modal-stadium-map-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  min-height: 300px;
+}
+
+.modal-stadium-map-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-seating-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.modal-legend-color.premium { background: var(--gold); }
+.modal-legend-color.category1 { background: #4CAF50; }
+
+.modal-seating-note {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(212, 168, 75, 0.08);
+  border: 1px solid rgba(212, 168, 75, 0.15);
+  border-radius: 12px;
+}
+
+.modal-seating-note p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.modal-seating-note strong {
+  color: var(--gold);
+}
+
+/* Modal Responsive */
+@media (max-width: 1024px) {
+  .modal-hotels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hotels-modal-container,
+  .seating-modal-container {
+    width: 98%;
+    max-height: 95vh;
+    border-radius: 16px;
+  }
+
+  .hotels-modal-header,
+  .seating-modal-header {
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hotels-modal-title h3,
+  .seating-modal-title h3 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .hotels-modal-body,
+  .seating-modal-body {
+    padding: 1.25rem;
+  }
+
+  .hotels-modal-close,
+  .seating-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+  }
+
+  .modal-hotels-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .modal-hotel-image {
+    height: 160px;
+  }
+
+  .modal-seating-legend {
+    gap: 1rem;
+  }
+}
+  /* Elegant Preloader */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--darker);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-logo {
+  position: relative;
+  width: 120px;
+  height: auto;
+}
+
+.preloader-logo img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: logoFadeIn 1.2s ease-out forwards;
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Subtle gold line animation below logo */
+.preloader-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin-top: 1.5rem;
+  animation: lineExpand 1s ease-out 0.3s forwards;
+}
+
+@keyframes lineExpand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+/* Optional: Subtle shimmer effect on logo */
+.preloader-logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 168, 75, 0.1),
+    transparent
+  );
+  animation: shimmer 1.5s ease-in-out 0.5s;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}   
+
+
+/* ============================================
+   LUXURY-PACKAGES.HTML - MOBILE RESPONSIVENESS FIXES
+   Add these styles at the END of your existing <style> tag
+   ============================================ */
+
+/* ===========================================
+   FIX 1: NAVIGATION - MOBILE
+   =========================================== */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.85rem 5%;
+    top: 0;
+  }
+  
+  .logo-text img {
+    width: 5.5rem;
+  }
+  
+  .nav-links {
+    display: none; /* Already hidden, but ensure it */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0.75rem 4%;
+  }
+  
+  .logo-text img {
+    width: 5rem;
+  }
+}
+
+
+/* ===========================================
+   FIX 2: HERO SECTION - CLOSE TO TOP ISSUE
+   =========================================== */
+
+@media (max-width: 768px) {
+  .hero-packages {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+    padding-top: 80px; /* Space for navbar */
+    padding-bottom: 3rem;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+    letter-spacing: 3px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero-title span {
+    font-size: 0.45em;
+    letter-spacing: 8px;
+    margin-top: 0.3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 0 0.5rem;
+    margin-bottom: 0;
+  }
+  
+  .fixture-btn {
+    margin-top: 1.5rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .fixture-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-packages {
+    padding-top: 70px;
+    padding-bottom: 2.5rem;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-title span {
+    font-size: 0.5em;
+    letter-spacing: 6px;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  
+  .fixture-btn {
+    margin-top: 1.25rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.65rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.75rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .hero-title span {
+    letter-spacing: 4px;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* ===========================================
+   FIX 3: WHY CHOOSE SECTION - MOBILE
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .why-choose {
+    padding: 4rem 5%;
+  }
+  
+  .why-choose-header {
+    margin-bottom: 3rem;
+  }
+  
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 3.5rem 5%;
+  }
+  
+  .why-choose-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-tag {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+  }
+  
+  .section-title {
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    letter-spacing: 2px;
+  }
+  
+  .why-choose-content h3 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+  
+  .why-choose-content p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  
+  .scarcity-callout {
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  
+  .scarcity-callout h4 {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .scarcity-callout p {
+    font-size: 0.85rem;
+  }
+  
+  .why-choose-features {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose {
+    padding: 3rem 4%;
+  }
+  
+  .why-choose-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-tag {
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .why-choose-content h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .why-choose-content p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+  
+  .scarcity-callout {
+    padding: 1rem;
+  }
+  
+  .scarcity-callout h4 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .scarcity-callout h4::before {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .scarcity-callout p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+
+
+/* ===========================================
+   FIX 4: FEATURE ITEMS (CLICKABLE) - MOBILE
+   =========================================== */
+
+@media (max-width: 768px) {
+  .feature-item {
+    padding: 1.25rem;
+    gap: 1rem;
+    flex-direction: row; /* Keep horizontal on tablet */
+  }
+  
+  .feature-item.clickable::after {
+    display: none; /* Hide arrow on mobile */
+  }
+  
+  .feature-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  
+  .feature-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .feature-text h4 {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature-text .view-hint {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.6rem;
+  }
+  
+  .feature-text p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-item {
+    padding: 1rem;
+    gap: 0.85rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .feature-item:hover {
+    transform: translateX(0) translateY(-5px); /* Vertical transform instead */
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  
+  .feature-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .feature-text {
+    text-align: center;
+  }
+  
+  .feature-text h4 {
+    font-size: 0.85rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .feature-text .view-hint {
+    font-size: 0.55rem;
+    margin-top: 0.15rem;
+  }
+  
+  .feature-text p {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+  
+  /* Make clickable items more obvious on mobile */
+  .feature-item.clickable {
+    border-color: rgba(212, 168, 75, 0.15);
+    background: linear-gradient(145deg, rgba(212, 168, 75, 0.04), rgba(212, 168, 75, 0.01));
+  }
+}
+
+
+/* ===========================================
+   FIX 5: OFFERINGS SECTION - MOBILE
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .offerings {
+    padding: 4rem 5%;
+  }
+  
+  .offerings-header {
+    margin-bottom: 3rem;
+  }
+  
+  .offerings-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .offerings {
+    padding: 3.5rem 5%;
+  }
+  
+  .offerings-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-tag-journey {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+  
+  .section-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+  
+  .offerings-grid {
+    max-width: 400px;
+    gap: 1.5rem;
+  }
+  
+  .offering-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .offering-card .limited-tag {
+    font-size: 0.6rem;
+    padding: 0.35rem 0.7rem;
+  }
+  
+  .offering-image {
+    height: 160px;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+  }
+  
+  .offering-card h3 {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .offering-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+  
+  .offering-card ul {
+    font-size: 0.85rem;
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .offering-price-text {
+    font-size: 0.8rem;
+    padding: 0.65rem 0.85rem;
+    margin-top: 0.75rem;
+  }
+  
+  .offering-price-text strong {
+    font-size: 1rem;
+  }
+  
+  .offering-price {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+  
+  .btn {
+    padding: 0.85rem 1.75rem;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offerings {
+    padding: 3rem 4%;
+  }
+  
+  .offerings-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-tag-journey {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .offerings-grid {
+    max-width: 100%;
+    gap: 1.25rem;
+  }
+  
+  .offering-card {
+    padding: 1.25rem;
+  }
+  
+  .offering-card .limited-tag {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 0.55rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .offering-image {
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+  
+  .offering-card h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
+  .offering-card p {
+    font-size: 0.8rem;
+  }
+  
+  .offering-card ul {
+    font-size: 0.8rem;
+  }
+  
+  .offering-price-text {
+    font-size: 0.75rem;
+    padding: 0.6rem 0.75rem;
+  }
+  
+  .offering-price-text strong {
+    font-size: 0.95rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.65rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* ===========================================
+   FIX 6: MODALS - MOBILE IMPROVEMENTS
+   =========================================== */
+
+@media (max-width: 768px) {
+  /* Schedule Modal */
+  .schedule-modal-container {
+    width: 98%;
+    max-height: 95vh;
+    border-radius: 16px;
+  }
+  
+  .schedule-modal-header {
+    padding: 1rem 1.25rem;
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  
+  .schedule-modal-title {
+    flex: 1;
+    gap: 0.5rem;
+  }
+  
+  .schedule-modal-title svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .schedule-modal-title h3 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .schedule-modal-title span {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .schedule-modal-close {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .schedule-modal-body {
+    padding: 1rem;
+  }
+  
+  .schedule-note {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    gap: 0.6rem;
+  }
+  
+  .schedule-note svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .schedule-note p {
+    font-size: 0.8rem;
+  }
+  
+  /* Hotels Modal */
+  .hotels-modal-container,
+  .seating-modal-container {
+    width: 98%;
+    max-height: 95vh;
+    border-radius: 16px;
+  }
+  
+  .hotels-modal-header,
+  .seating-modal-header {
+    padding: 1rem 1.25rem;
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  
+  .hotels-modal-title,
+  .seating-modal-title {
+    flex: 1;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .hotels-modal-title svg,
+  .seating-modal-title svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .hotels-modal-title h3,
+  .seating-modal-title h3 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .hotels-modal-title span,
+  .seating-modal-title span {
+    font-size: 0.55rem;
+    padding: 0.25rem 0.6rem;
+  }
+  
+  .hotels-modal-close,
+  .seating-modal-close {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .hotels-modal-body,
+  .seating-modal-body {
+    padding: 1.25rem;
+  }
+  
+  /* Hotels Grid in Modal */
+  .modal-hotels-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .modal-hotel-card {
+    border-radius: 12px;
+  }
+  
+  .modal-hotel-image {
+    height: 150px;
+  }
+  
+  .modal-hotel-content {
+    padding: 1rem;
+  }
+  
+  .modal-hotel-city {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+  }
+  
+  .modal-hotel-name {
+    font-size: 1rem;
+  }
+  
+  .modal-hotel-tag {
+    font-size: 0.55rem;
+    padding: 0.3rem 0.6rem;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+  
+  .modal-hotels-note {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    gap: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .modal-hotels-note svg {
+    margin: 0 auto;
+  }
+  
+  .modal-hotels-note p {
+    font-size: 0.8rem;
+  }
+  
+  /* Seating Modal Specific */
+  .modal-stadium-selector {
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal-stadium-selector label {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .modal-stadium-select {
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+  
+  .modal-stadium-map-container {
+    padding: 1.25rem;
+    border-radius: 12px;
+    min-height: 250px;
+  }
+  
+  .modal-seating-legend {
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+  
+  .modal-legend-item {
+    font-size: 0.75rem;
+    gap: 0.4rem;
+  }
+  
+  .modal-legend-color {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .modal-seating-note {
+    margin-top: 1.25rem;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+  }
+  
+  .modal-seating-note p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-modal-header,
+  .hotels-modal-header,
+  .seating-modal-header {
+    padding: 0.85rem 1rem;
+  }
+  
+  .schedule-modal-title h3,
+  .hotels-modal-title h3,
+  .seating-modal-title h3 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
+  .schedule-modal-title span,
+  .hotels-modal-title span,
+  .seating-modal-title span {
+    display: none; /* Hide badge on very small screens */
+  }
+  
+  .schedule-modal-close,
+  .hotels-modal-close,
+  .seating-modal-close {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .schedule-modal-close svg,
+  .hotels-modal-close svg,
+  .seating-modal-close svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .schedule-modal-body,
+  .hotels-modal-body,
+  .seating-modal-body {
+    padding: 1rem;
+  }
+  
+  .modal-hotel-image {
+    height: 130px;
+  }
+  
+  .modal-hotel-content {
+    padding: 0.85rem;
+  }
+  
+  .modal-hotel-city {
+    font-size: 0.55rem;
+  }
+  
+  .modal-hotel-name {
+    font-size: 0.95rem;
+  }
+  
+  .modal-hotels-note {
+    padding: 0.85rem 1rem;
+  }
+  
+  .modal-hotels-note p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+  
+  .modal-stadium-map-container {
+    padding: 1rem;
+    min-height: 200px;
+  }
+  
+  .modal-seating-legend {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .modal-seating-note {
+    padding: 0.85rem 1rem;
+  }
+  
+  .modal-seating-note p {
+    font-size: 0.75rem;
+  }
+}
+
+
+/* ===========================================
+   FIX 7: FOOTER - MOBILE
+   =========================================== */
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2.5rem 5%;
+  }
+  
+  footer .logo-text img {
+    width: 4.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  footer p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 2rem 4%;
+  }
+  
+  footer .logo-text img {
+    width: 4rem;
+  }
+  
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+
+/* ===========================================
+   FIX 8: PRELOADER - MOBILE
+   =========================================== */
+
+@media (max-width: 480px) {
+  .preloader-logo {
+    width: 90px;
+  }
+  
+  .preloader-line {
+    margin-top: 1.25rem;
+  }
+  
+  @keyframes lineExpand {
+    100% {
+      width: 60px;
+    }
+  }
+}
+
+
+/* ===========================================
+   FIX 9: GENERAL IMPROVEMENTS
+   =========================================== */
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  .feature-item.clickable,
+  .btn,
+  .fixture-btn {
+    min-height: 44px; /* Apple's recommended touch target */
+  }
+  
+  /* Prevent text selection on interactive elements */
+  .feature-item.clickable,
+  .btn {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  /* Smooth scrolling for iOS */
+  .hotels-modal-body,
+  .seating-modal-body,
+  .schedule-modal-body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Fix for notched phones (iPhone X and later) */
+@supports (padding: max(0px)) {
+  @media (max-width: 768px) {
+    .hero-packages {
+      padding-bottom: max(3rem, env(safe-area-inset-bottom));
+    }
+    
+    footer {
+      padding-bottom: max(2rem, env(safe-area-inset-bottom));
+    }
+  }
+}
+
+/* Landscape mode fixes */
+@media (max-width: 896px) and (orientation: landscape) {
+  .hero-packages {
+    min-height: auto;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .fixture-btn {
+    margin-top: 1rem;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+<!-- Elegant Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">
+    <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png" alt="VARA5">
+  </div>
+  <div class="preloader-line"></div>
+</div>
+
+
+<!-- Schedule Modal -->
+<div class="schedule-modal" id="scheduleModal">
+  <div class="schedule-modal-overlay" onclick="closeScheduleModal()"></div>
+  <div class="schedule-modal-container">
+    <div class="schedule-modal-header">
+      <div class="schedule-modal-title">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <h3>Match Schedule</h3>
+        <span>World Cup 2026</span>
+      </div>
+      <button class="schedule-modal-close" onclick="closeScheduleModal()">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="schedule-modal-body">
+      <div class="schedule-image-container">
+        <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768295064/match_schedule_sql5p9.jpg" alt="World Cup 2026 Match Schedule">
+      </div>
+      <div class="schedule-note">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        <p><strong>All times shown in local venue time.</strong> Vara5 programs include tickets to multiple matches across your selected journey.</p>
+      </div>
+</div>
+  </div>
+</div>
+
+<!-- Hotels Modal -->
+<div class="hotels-modal" id="hotelsModal">
+  <div class="hotels-modal-overlay" onclick="closeHotelsModal()"></div>
+  <div class="hotels-modal-container">
+    <div class="hotels-modal-header">
+      <div class="hotels-modal-title">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <h3>Pre-Secured Hotels</h3>
+        <span>Exclusive Access</span>
+      </div>
+      <button class="hotels-modal-close" onclick="closeHotelsModal()">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="hotels-modal-body">
+      <div class="modal-hotels-grid">
+        <!-- New York Hotels -->
+        <div class="modal-hotel-card">
+          <span class="modal-hotel-tag">Secured</span>
+          <div class="modal-hotel-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768200506/Peninsula_1_vuxzjt.jpg" alt="The Peninsula New York">
+          </div>
+          <div class="modal-hotel-content">
+            <p class="modal-hotel-city">New York / New Jersey</p>
+            <h3 class="modal-hotel-name">The Peninsula New York</h3>
+          </div>
+        </div>
+
+        <div class="modal-hotel-card">
+          <span class="modal-hotel-tag">Secured</span>
+          <div class="modal-hotel-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768200505/St._Regis_1_ernn2o.jpg" alt="The St. Regis New York">
+          </div>
+          <div class="modal-hotel-content">
+            <p class="modal-hotel-city">New York / New Jersey</p>
+            <h3 class="modal-hotel-name">The St. Regis New York</h3>
+          </div>
+        </div>
+
+        <div class="modal-hotel-card">
+          <span class="modal-hotel-tag">Secured</span>
+          <div class="modal-hotel-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768200452/ritz_carlton_nomad_jmi1xj.jpg" alt="The Ritz-Carlton NoMad">
+          </div>
+          <div class="modal-hotel-content">
+            <p class="modal-hotel-city">New York / New Jersey</p>
+            <h3 class="modal-hotel-name">The Ritz-Carlton NoMad</h3>
+          </div>
+        </div>
+
+        <!-- Los Angeles Hotels -->
+        <div class="modal-hotel-card">
+          <span class="modal-hotel-tag">Secured</span>
+          <div class="modal-hotel-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768200226/beverly_hills_marriott_r3zrej.jpg" alt="Beverly Hills Luxury">
+          </div>
+          <div class="modal-hotel-content">
+            <p class="modal-hotel-city">Los Angeles</p>
+            <h3 class="modal-hotel-name">Beverly Hills Collection</h3>
+          </div>
+        </div>
+
+        <!-- Miami Hotels -->
+        <div class="modal-hotel-card">
+          <span class="modal-hotel-tag">Secured</span>
+          <div class="modal-hotel-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768199398/Hampton_Inn_Miami_Beach_1_aybzbg.jpg" alt="Miami Luxury">
+          </div>
+          <div class="modal-hotel-content">
+            <p class="modal-hotel-city">Miami</p>
+            <h3 class="modal-hotel-name">Hampton Inn</h3>
+          </div>
+        </div>
+
+        <!-- Mexico City -->
+        <div class="modal-hotel-card">
+          <span class="modal-hotel-tag">Secured</span>
+          <div class="modal-hotel-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768199707/hyatt_regency_mexico_city_ydsglz.jpg" alt="Mexico City Luxury">
+          </div>
+          <div class="modal-hotel-content">
+            <p class="modal-hotel-city">Mexico City</p>
+            <h3 class="modal-hotel-name">Hyatt Regency</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-hotels-note">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        <p><strong>All properties are pre-secured by Vara5</strong> and are no longer available through public booking channels. Hotels are within optimal distance of host stadiums with managed matchday transfers included.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Seating Modal -->
+<div class="seating-modal" id="seatingModal">
+  <div class="seating-modal-overlay" onclick="closeSeatingModal()"></div>
+  <div class="seating-modal-container">
+    <div class="seating-modal-header">
+      <div class="seating-modal-title">
+        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+        <h3>Premium Seating</h3>
+        <span>Category 1 Access</span>
+      </div>
+      <button class="seating-modal-close" onclick="closeSeatingModal()">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="seating-modal-body">
+      <div class="modal-stadium-selector">
+        <label for="modalStadiumSelect">Choose Your Stadium</label>
+        <select id="modalStadiumSelect" class="modal-stadium-select" onchange="updateModalStadiumMap()">
+          <option value="">Select a stadium...</option>
+          <option value="metlife">MetLife Stadium – East Rutherford</option>
+          <option value="att">AT&T Stadium – Arlington</option>
+          <option value="sofi">SoFi Stadium – Inglewood</option>
+          <option value="mercedes">Mercedes-Benz Stadium – Atlanta</option>
+          <option value="arrowhead">Arrowhead Stadium – Kansas City</option>
+          <option value="nrg">NRG Stadium – Houston</option>
+          <option value="lincoln">Lincoln Financial Field – Philadelphia</option>
+          <option value="lumen">Lumen Field – Seattle</option>
+          <option value="levis">Levi's Stadium – Santa Clara</option>
+          <option value="gillette">Gillette Stadium – Foxborough</option>
+          <option value="hardrock">Hard Rock Stadium – Miami Gardens</option>
+          <option value="azteca">Estadio Azteca – Mexico City</option>
+          <option value="bbva">Estadio BBVA – Monterrey</option>
+          <option value="akron">Estadio Akron – Guadalajara</option>
+          <option value="bcplace">BC Place – Vancouver</option>
+          <option value="bmo">BMO Field – Toronto</option>
+        </select>
+      </div>
+
+      <div class="modal-stadium-map-container" id="modalStadiumMapContainer">
+        <p style="color: rgba(255,255,255,0.5); padding: 3rem;">Select a stadium above to view the seating map</p>
+      </div>
+
+      <div class="modal-seating-legend">
+        <div class="modal-legend-item">
+          <div class="modal-legend-color premium"></div>
+          <span>Premium Seating (Vara5 Access)</span>
+        </div>
+        <div class="modal-legend-item">
+          <div class="modal-legend-color category1"></div>
+          <span>Category 1 (Vara5 Access)</span>
+        </div>
+      </div>
+
+      <div class="modal-seating-note">
+        <p><strong>All Vara5 programs include Premium or Category 1 seating</strong> — the best views in every stadium, secured through our exclusive allocations.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo-text">
+      <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png" alt="VARA5 Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        Back
+      </a></li>
+      <li><a href="#" onclick="openHotelsModal(); return false;">Hotels</a></li>
+      <li><a href="#" onclick="openSeatingModal(); return false;">Seating</a></li>
+      <li><a href="#programs" class="nav-cta">Programs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-packages">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1920&q=80" alt="Luxury Stadium Experience">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- <div class="hero-badge">World Cup Journeys by Vara5</div> -->
+      <h1 class="hero-title">
+        Luxury World Cup
+        <span>Journeys</span>
+      </h1>
+      <p class="hero-subtitle">Spanning across three countries and sixteen cities, Vara5 transforms the world’s most complex tournament into a seamless, fully orchestrated experience.
+ </p>
+      <button class="fixture-btn" onclick="openScheduleModal()">
+  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+  View Match Schedule
+</button>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="why-choose">
+    <div class="why-choose-inner">
+      <div class="why-choose-header">
+        <span class="section-tag">Why Choose Vara5</span>
+        <h2 class="section-title">The Complete World Cup Experience</h2>
+      </div>
+
+      <div class="why-choose-grid">
+        <div class="why-choose-content">
+          <h3>Vara5 Luxury World Cup Journeys combine <span>premium match access</span> with carefully secured <span>luxury hotels</span> and fully managed logistics.</h3>
+          <p>Vara5 Luxury World Cup Journeys are built around the realities of the tournament - not aspirations.
+Hotels near stadiums are the most constrained asset, public availability disappears early, and matchdays allow no flexibility.
+</p>
+          <p>Vara5 eliminates these variables entirely, delivering a single, coordinated journey where every detail is planned, timed, and managed.</p>
+
+          <div class="scarcity-callout">
+            <h4>Hotel Scarcity Alert</h4>
+            <p>Hotels near World Cup stadiums are the most constrained asset of the tournament. <strong> Vara5 has access to a limited number of pre-secured hotel rooms that are no longer available publicly.</strong></p>
+          </div>
+        </div>
+
+        <div class="why-choose-features">
+          <div class="feature-item clickable" onclick="openHotelsModal()">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <div class="feature-text">
+              <h4>Pre-Secured Luxury Hotels <span class="view-hint">View Properties →</span></h4>
+              <p>Handpicked luxury hotels within optimal distance of host stadiums - contracted months in advance and no longer available publicly.</p>
+            </div>
+          </div>
+
+          <div class="feature-item clickable" onclick="openSeatingModal()">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <div class="feature-text">
+              <h4>Premium & Category 1 Tickets <span class="view-hint">View Seating →</span></h4>
+              <p>The best seating in every stadium, secured across all tournament stages through exclusive allocations.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="feature-text">
+              <h4>Seamless Logistics</h4>
+              <p>Matchday routing, inter-city transfers, and ground movements planned precisely around fixed schedules.</p>
+            </div>
+          </div>
+
+          <!-- <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="feature-text">
+              <h4>24/7 Concierge</h4>
+              <p>A single on-ground team managing every detail, adjustment, and contingency throughout your journey.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hotels and Seating content moved to modals -->
+
+  <!-- Offerings Section -->
+  <section class="offerings" id="programs">
+    <div class="offerings-inner">
+      <div class="offerings-header">
+        <span class="section-tag-journey">Choose Your Journey</span>
+        <!-- <h2 class="section-title">Premium Match Programs</h2> -->
+        <p class="section-subtitle">Three distinct ways to experience the World Cup - each designed around different priorities, but built to the same uncompromising standard.</p>
+      </div>
+
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <span class="limited-tag">8 Left</span>
+          <div class="offering-image">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&q=80" alt="Regional Programs">
+          </div>
+          <h3>Regional</h3>
+          <p>One region. Maximum immersion.</p>
+          <p>Designed around one geographic zone where multiple matches are played.</p>
+          <p>Includes:</p>
+          <ul>
+            <li>3-4 matches</li>
+            <li>Premium or Category 1 seating</li>
+            <li>Luxury hotel base</li>
+            <li>Matchday transfers</li>
+          </ul>
+          <p class="offering-price-text">Indicative pricing: <strong>$12,000 – $18,000</strong> per person (excluding flights)</p>
+          <div class="offering-price">
+
+            <a href="regional-programs.html" class="btn btn-urgent">Select</a>
+          </div>
+          <div class="offering-slots">
+            <!-- <span class="dot"></span> High demand - selling fast -->
+          </div>
+        </div>
+
+        <div class="offering-card">
+          <span class="limited-tag">12 Left</span>
+          <div class="offering-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766593190/ronaldo-1_dnj8wf.avif" alt="Follow Your Team">
+          </div>
+          <h3>Follow Your Team</h3>
+          <p>Stay with your colours. Wherever they go.</p>
+          <p>Support one national team from the group stage into the knockouts.</p>
+          <p>Includes:</p>
+          <ul>
+            <li>Group stage and knockout matches</li>
+            <li>Premium or Category 1 seating</li>
+            <li>Luxury hotels across host cities</li>
+            <li>Fully managed logistics</li>
+          </ul>
+          <p class="offering-price-text">Indicative pricing: <strong>$18,000 – $30,000</strong> per person (excluding flights)</p>
+          <div class="offering-price">
+            <a href="follow-your-team.html" class="btn btn-urgent">Select</a>
+          </div>
+          <div class="offering-slots">
+            <!-- <span class="dot"></span> Only 12 Programs remaining -->
+          </div>
+        </div>
+
+        <div class="offering-card">
+          <span class="limited-tag">6 Left</span>
+          <div class="offering-image">
+            <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766593412/AFP__20251205__879L8EN__v1__MidRes__FblWc2026Draw-1765027657_mhnt1c.png" alt="Finals Journey">
+          </div>
+          <h3>Finals & Late-Stage</h3>
+          <p>Where football reaches its peak.</p>
+          <p>Quarter-Finals. Semi-Finals. The Final. The rarest matches, played under the greatest pressure.</p>
+          <p>Includes:</p>
+          <ul>
+            <li>Quarter-Final, Semi-Final & Final access</li>
+            <li>Premium or Category 1 seating</li>
+            <li>Luxury hotels across host cities</li>
+            <li>Fully managed logistics</li>
+          </ul>
+          <p class="offering-price-text">Indicative pricing: <strong>$25,000+</strong> per person (excluding flights)</p>
+          <div class="offering-price">
+            <a href="finals-late-stage.html" class="btn btn-urgent">Select</a>
+          </div>
+          <div class="offering-slots">
+            <!-- <span class="dot"></span> Only 6 Programs remaining -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <!-- <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-header">
+        <span class="section-tag">Secure Your Experience</span>
+        <h2 class="section-title">Request Your Package</h2>
+        <p class="section-subtitle">Complete the form below and our team will contact you within 24 hours with availability and next steps.</p>
+      </div>
+
+      <form class="contact-form" id="packageForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" placeholder="Smith" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+1 (555) 000-0000">
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label>Select Program *</label>
+          <select required>
+            <option value="">Choose your program...</option>
+            <option value="regional">Regional Programs (USD 12,000 – 18,000)</option>
+            <option value="follow">Follow Your Team (USD 18,000 – 30,000)</option>
+            <option value="finals">Finals & Late-Stage (USD 25,000+)</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label>Preferred Region/Team (if applicable)</label>
+          <input type="text" placeholder="e.g., East Coast USA, Argentina, Semi-Finals onwards...">
+        </div>
+
+        <div class="form-group full">
+          <label>Number of Guests</label>
+          <select>
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5+">5+ Guests (Group Booking)</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label>Additional Requirements</label>
+          <textarea placeholder="Tell us about any special requirements, preferences, or questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-urgent">Submit Request</button>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer>
+    <a href="index.html" class="logo-text">
+      <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png" alt="VARA5">
+    </a>
+    <p>© 2025 Vara5 Journeys Pvt. Ltd. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Stadium map data - using Vancouver as placeholder, you can replace URLs
+    const stadiumMaps = {
+      metlife: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294094/NEW_YORK_NEW_JERSEY_wtfwhv.jpg',
+      att: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293752/DALLAS_ejlbfi.jpg',
+      sofi: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293953/LOS_ANGELES_ivh10l.jpg',
+      mercedes: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293501/ATLANTA_nebze4.jpg',
+      arrowhead: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293909/KANSAS_erckjl.jpg',
+      nrg: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293800/HOUSTON_gokjt3.jpg',
+      lincoln: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294142/PHILADELPHIA_yu2laj.jpg',
+      lumen: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294181/SEATTLE_lbdwbk.jpg',
+      levis: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294182/SAN_FRANCISCO_BAY_AREA_ll3a5o.jpg',
+      gillette: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293696/BOSTON_ztap3i.jpg',
+      hardrock: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294028/MIAMI_sd4zw1.jpg',
+      azteca: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768293992/MEXICO_al001b.jpg',
+      bbva: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294063/MONTERREY_yquy2v.jpg',
+      akron: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768280506/GUADALAJARA_mzmftl.jpg',
+      bcplace: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768280504/Vancouver_1_iaylr2.jpg',
+      bmo: 'https://res.cloudinary.com/dpqly9rlk/image/upload/v1768280505/toronto_1_odxprr.jpg'
+    };
+
+    const stadiumNames = {
+      metlife: 'MetLife Stadium – New York/New Jersey',
+      att: 'AT&T Stadium – Dallas',
+      sofi: 'SoFi Stadium – Los Angeles',
+      mercedes: 'Mercedes-Benz Stadium – Atlanta',
+      arrowhead: 'Arrowhead Stadium – Kansas City',
+      nrg: 'NRG Stadium – Houston',
+      lincoln: 'Lincoln Financial Field – Philadelphia',
+      lumen: 'Lumen Field – Seattle',
+      levis: "Levi's Stadium – San Francisco Bay Area",
+      gillette: 'Gillette Stadium – Boston',
+      hardrock: 'Hard Rock Stadium – Miami',
+      azteca: 'Estadio Azteca – Mexico City',
+      bbva: 'Estadio BBVA – Monterrey',
+      akron: 'Estadio Akron – Guadalajara',
+      bcplace: 'BC Place – Vancouver',
+      bmo: 'BMO Field – Toronto'
+    };
+
+    function updateStadiumMap() {
+      const select = document.getElementById('stadiumSelect');
+      const container = document.getElementById('stadiumMapContainer');
+      const value = select.value;
+
+      if (value && stadiumMaps[value]) {
+        container.innerHTML = `
+          <h3 style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 400; letter-spacing: 2px; margin-bottom: 1.5rem; color: var(--gold);">${stadiumNames[value]}</h3>
+          <img src="${stadiumMaps[value]}" alt="${stadiumNames[value]} Seating Map" onerror="this.onerror=null; this.src='https://digitalhub.fifa.com/m/3c2acc012b1bae34/original/Stadium_Map_Vancouver.png';">
+          <p style="margin-top: 1.5rem; color: rgba(255,255,255,0.6); font-size: 0.9rem;">Premium and Category 1 sections highlighted. Vara5 clients receive guaranteed seating in these premium areas.</p>
+        `;
+      } else {
+        container.innerHTML = '<p style="color: rgba(255,255,255,0.5); padding: 4rem;">Select a stadium above to view the seating map</p>';
+      }
+    }
+
+    // Form submission
+// Form submission (only if form exists)
+const packageForm = document.getElementById('packageForm');
+if (packageForm) {
+  packageForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button');
+    btn.textContent = 'Request Submitted!';
+    btn.style.background = 'linear-gradient(135deg, #1DB954, #1ed760)';
+    setTimeout(() => {
+      btn.textContent = 'Submit Request';
+      btn.style.background = '';
+      this.reset();
+    }, 3000);
+  });
+}
+
+    // Scroll animations
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.hotel-card, .offering-card, .feature-item').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = `all 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${i * 0.1}s`;
+      observer.observe(el);
+    });
+// Schedule Modal Functions
+function openScheduleModal() {
+  document.getElementById('scheduleModal').classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+function closeScheduleModal() {
+  document.getElementById('scheduleModal').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeScheduleModal();
+    closeHotelsModal();
+    closeSeatingModal();
+  }
+});
+
+// Hotels Modal Functions
+function openHotelsModal() {
+  document.getElementById('hotelsModal').classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+function closeHotelsModal() {
+  document.getElementById('hotelsModal').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+// Seating Modal Functions
+function openSeatingModal() {
+  document.getElementById('seatingModal').classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+function closeSeatingModal() {
+  document.getElementById('seatingModal').classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+// Update stadium map in modal
+function updateModalStadiumMap() {
+  const select = document.getElementById('modalStadiumSelect');
+  const container = document.getElementById('modalStadiumMapContainer');
+  const value = select.value;
+
+  if (value && stadiumMaps[value]) {
+    container.innerHTML = `
+      <h3 style="font-family: 'Oswald', sans-serif; font-size: 1.4rem; font-weight: 400; letter-spacing: 2px; margin-bottom: 1.5rem; color: var(--gold);">${stadiumNames[value]}</h3>
+      <img src="${stadiumMaps[value]}" alt="${stadiumNames[value]} Seating Map" onerror="this.onerror=null; this.src='https://digitalhub.fifa.com/m/3c2acc012b1bae34/original/Stadium_Map_Vancouver.png';">
+      <p style="margin-top: 1.5rem; color: rgba(255,255,255,0.6); font-size: 0.85rem;">Premium and Category 1 sections highlighted. Vara5 clients receive guaranteed seating in these premium areas.</p>
+    `;
+  } else {
+    container.innerHTML = '<p style="color: rgba(255,255,255,0.5); padding: 3rem;">Select a stadium above to view the seating map</p>';
+  }
+}
+  // Elegant Preloader - Hide after short duration
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('preloader').classList.add('hidden');
+  }, 1800); // 1.8 seconds total - feels premium but not slow
+});
+
+
+  </script>
+
+</body>
+</html>

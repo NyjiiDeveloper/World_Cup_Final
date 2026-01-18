@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://worldcup.vara5.com/sitemap.xml

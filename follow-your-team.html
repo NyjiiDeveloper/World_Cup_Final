@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow Your Team | VARA5 World Cup 2026</title>
+
+  <meta name="description" content="Follow your national team throughout World Cup 2026. Premium tickets, luxury hotels, seamless travel across USA, Mexico & Canada with VARA5.">
+
+      <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294600/logo_favicon_1_inrvfo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold:#d4a84b;--gold-light:#e8c97a;--gold-dark:#b8942f;--dark:#0d0d0d;--darker:#070707;--white:#fff;--accent:#1db954}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:"Montserrat",sans-serif;background:var(--darker);color:var(--white);overflow-x:hidden}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--darker)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+    nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(7,7,7,0.95);backdrop-filter:blur(30px);border-bottom:1px solid rgba(212,168,75,0.1)}
+    .logo-text img{width:6rem}.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}.nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-weight:500;font-size:0.8rem;letter-spacing:1px;text-transform:uppercase;transition:0.3s}.nav-links a:hover{color:var(--gold)}
+    .nav-cta{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--dark)!important;padding:10px 20px!important;border-radius:50px;font-weight:600}
+    .back-link{display:flex;align-items:center;gap:0.5rem;color:var(--gold)!important}.back-link svg{width:16px;height:16px;stroke:currentColor;fill:none}
+    .hero{position:relative;height:55vh;min-height:400px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .hero-bg{position:absolute;inset:0}.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.35);transform:scale(1.1)}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,7,0.4),rgba(7,7,7,0.6) 50%,rgba(7,7,7,1));z-index:1}
+    .hero-content{position:relative;z-index:10;text-align:center;padding:2rem}
+    .hero-badge{display:inline-flex;padding:0.5rem 1.5rem;background:rgba(212,168,75,0.1);border:1px solid rgba(212,168,75,0.3);border-radius:50px;font-size:0.65rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+    .hero-title{font-family:"Oswald",sans-serif;font-size:clamp(2.5rem,7vw,4.5rem);font-weight:700;letter-spacing:8px;text-transform:uppercase;line-height:1.1}
+    .hero-title span{display:block;font-weight:300;font-size:0.4em;letter-spacing:6px;color:var(--gold);margin-top:0.5rem}
+    .hero-subtitle{font-size:0.95rem;color:rgba(255,255,255,0.7);max-width:600px;margin:1rem auto 0;line-height:1.8}
+    .section-tag{display:inline-block;font-size:0.65rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem}
+    .section-title{font-family:"Oswald",sans-serif;font-size:clamp(1.8rem,4vw,2.5rem);font-weight:500;letter-spacing:3px;text-transform:uppercase}
+    .section-subtitle{color:rgba(255,255,255,0.5);margin-top:0.5rem;font-size:0.9rem;line-height:1.7}
+    .about-section{padding:4rem 5%;background:var(--darker)}.about-inner{max-width:1000px;margin:0 auto;text-align:center}
+    .about-features{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+    .about-feature{padding:1.25rem;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:12px;transition:0.3s;text-align:center}
+    .about-feature:hover{border-color:rgba(212,168,75,0.2);transform:translateY(-5px)}
+    .about-feature-icon{width:45px;height:45px;margin:0 auto 0.75rem;background:rgba(212,168,75,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold)}
+    .about-feature-icon svg{width:22px;height:22px;stroke:currentColor;fill:none}
+    .about-feature h4{font-family:"Oswald",sans-serif;font-size:0.9rem;font-weight:500;letter-spacing:1px;margin-bottom:0.4rem}
+    .about-feature p{font-size:0.75rem;color:rgba(255,255,255,0.5)}
+    .team-section{padding:4rem 5%;background:linear-gradient(180deg,var(--dark),var(--darker))}.team-inner{max-width:1200px;margin:0 auto}.team-header{text-align:center;margin-bottom:2.5rem}
+    .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+    .team-card{position:relative;padding:1.25rem 0.75rem;background:rgba(255,255,255,0.02);border:2px solid rgba(255,255,255,0.08);border-radius:12px;cursor:pointer;transition:0.3s;text-align:center}
+    .team-card:hover{border-color:rgba(255,255,255,0.2);transform:translateY(-3px)}.team-card.selected{border-color:var(--gold);background:rgba(212,168,75,0.08)}
+    .team-flag{width:50px;height:35px;margin:0 auto 0.6rem;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.3)}.team-flag img{width:100%;height:100%;object-fit:cover}
+    .team-name{font-family:"Oswald",sans-serif;font-size:0.8rem;font-weight:500;letter-spacing:1px;text-transform:uppercase}
+    .team-code{font-size:0.65rem;color:rgba(255,255,255,0.4);margin-top:0.2rem}
+    .team-checkbox{position:absolute;top:0.5rem;right:0.5rem;width:18px;height:18px;border:2px solid rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center}
+    .team-card.selected .team-checkbox{background:var(--gold);border-color:var(--gold)}.team-checkbox svg{width:10px;height:10px;stroke:var(--dark);fill:none;stroke-width:3;opacity:0}.team-card.selected .team-checkbox svg{opacity:1}
+    .journey-section{padding:4rem 5%;background:var(--darker);display:none}.journey-section.visible{display:block}.journey-inner{max-width:1000px;margin:0 auto}.journey-header{text-align:center;margin-bottom:2rem}
+    .selected-team-display{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:2rem}
+    .selected-team-flag{width:60px;height:40px;border-radius:4px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.3)}.selected-team-flag img{width:100%;height:100%;object-fit:cover}
+    .selected-team-name{font-family:"Oswald",sans-serif;font-size:1.8rem;font-weight:600;letter-spacing:2px}
+    .stage-container{margin-bottom:2rem}.stage-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(255,255,255,0.1)}
+    .stage-badge{padding:0.4rem 1rem;background:rgba(212,168,75,0.15);border-radius:50px;font-size:0.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+    .stage-badge.addon{background:rgba(156,39,176,0.15);color:#9C27B0}.stage-info{font-size:0.75rem;color:rgba(255,255,255,0.5)}
+    .matches-list{display:flex;flex-direction:column;gap:0.75rem}
+    .match-card{display:grid;grid-template-columns:auto 1fr auto auto;gap:1rem;align-items:center;padding:1rem 1.25rem;background:linear-gradient(145deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.06);border-radius:10px;transition:0.3s}
+    .match-card:hover{border-color:rgba(255,255,255,0.15)}.match-card.included{border-left:3px solid var(--gold)}
+    .match-card.addon-match{border-left:3px solid #9C27B0;opacity:0.7}.match-card.addon-match.selected{opacity:1;border-color:#9C27B0;background:rgba(156,39,176,0.08)}
+    .match-number{font-family:"Oswald",sans-serif;font-size:0.7rem;color:rgba(255,255,255,0.4);padding:0.3rem 0.5rem;background:rgba(255,255,255,0.05);border-radius:4px}
+    .match-teams-row{display:flex;align-items:center;gap:0.6rem}.match-team-name{font-family:"Oswald",sans-serif;font-size:0.85rem;font-weight:500}
+    .match-vs{font-size:0.6rem;color:rgba(255,255,255,0.3);margin:0 0.3rem}.match-details{text-align:right}.match-date{font-size:0.75rem;font-weight:500}.match-venue{font-size:0.65rem;color:rgba(255,255,255,0.5);margin-top:0.2rem}
+    .match-included-badge{padding:0.25rem 0.6rem;background:rgba(212,168,75,0.2);border-radius:50px;font-size:0.6rem;font-weight:600;color:var(--gold);letter-spacing:1px}
+    .addon-checkbox{width:22px;height:22px;border:2px solid rgba(156,39,176,0.4);border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:0.3s}
+    .addon-checkbox:hover{border-color:#9C27B0}.addon-checkbox.checked{background:#9C27B0;border-color:#9C27B0}.addon-checkbox svg{width:12px;height:12px;stroke:var(--white);fill:none;stroke-width:3;opacity:0}.addon-checkbox.checked svg{opacity:1}
+    .scenario-tabs{display:flex;gap:0.5rem;margin-bottom:1.5rem;justify-content:center;flex-wrap:wrap}
+    .scenario-tab{padding:0.6rem 1.25rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:50px;font-size:0.7rem;font-weight:500;cursor:pointer;transition:0.3s;color:rgba(255,255,255,0.7)}
+    .scenario-tab:hover{border-color:rgba(255,255,255,0.3)}.scenario-tab.active{background:rgba(212,168,75,0.15);border-color:var(--gold);color:var(--gold)}
+    .journey-summary{position:sticky;bottom:0;background:linear-gradient(180deg,transparent,var(--darker) 20%);padding:1.5rem 0 0;margin-top:2rem}
+    .summary-bar{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 1.75rem;background:linear-gradient(135deg,rgba(212,168,75,0.1),rgba(212,168,75,0.05));border:1px solid rgba(212,168,75,0.2);border-radius:14px}
+    .summary-info{display:flex;align-items:center;gap:1.5rem}.summary-stat{text-align:center}.summary-stat-value{font-family:"Oswald",sans-serif;font-size:1.4rem;font-weight:500;color:var(--gold)}
+    .summary-stat-label{font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}.summary-divider{width:1px;height:30px;background:rgba(255,255,255,0.1)}
+    .btn{padding:0.85rem 1.75rem;font-family:"Montserrat",sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;border-radius:50px;cursor:pointer;transition:0.4s;border:none;display:inline-flex;align-items:center;gap:0.4rem}
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--dark)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,168,75,0.3)}.btn svg{width:14px;height:14px;stroke:currentColor;fill:none}
+    .form-section{padding:4rem 5%;background:var(--darker)}.form-inner{max-width:750px;margin:0 auto}.form-header{text-align:center;margin-bottom:2rem}
+    .booking-form{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:2rem}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}.form-group{margin-bottom:1.25rem}.form-group.full{grid-column:1/-1}
+    .form-group label{display:block;font-size:0.7rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.4rem}
+    .form-group input,.form-group textarea,.form-group select{width:100%;padding:0.85rem 1rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:var(--white);font-family:"Montserrat",sans-serif;font-size:0.85rem}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--gold)}.form-group textarea{min-height:90px;resize:vertical}
+    .form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23D4A84B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;cursor:pointer}
+    .form-group select option{background:var(--dark)}
+    .selected-package-preview{background:rgba(212,168,75,0.05);border:1px solid rgba(212,168,75,0.15);border-radius:10px;padding:1rem;margin-bottom:1.25rem}
+    .preview-title{font-size:0.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem}
+    .preview-items{display:flex;flex-wrap:wrap;gap:0.4rem}.preview-item{padding:0.35rem 0.6rem;background:rgba(255,255,255,0.05);border-radius:20px;font-size:0.65rem;color:rgba(255,255,255,0.8)}
+    .booking-form .btn{width:100%;justify-content:center;padding:1rem}
+    footer{padding:1.5rem 5%;background:var(--darker);border-top:1px solid rgba(255,255,255,0.05);text-align:center}footer p{color:rgba(255,255,255,0.35);font-size:0.75rem}
+    @media(max-width:1024px){.about-features{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(4,1fr);gap:1rem}}
+    @media(max-width:768px){.nav-links{display:none}.hero{height:45vh}.hero-title{font-size:2rem}.about-features,.form-row{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.match-card{grid-template-columns:1fr;text-align:center}.match-details{text-align:center}.summary-bar{flex-direction:column;gap:1rem}}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+   .preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--darker);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-text {
+  position: relative;
+  width: 120px;
+  height: auto;
+}
+
+.preloader-text img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: logoFadeIn 1.2s ease-out forwards;
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Subtle gold line animation below logo */
+.preloader-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin-top: 1.5rem;
+  animation: lineExpand 1s ease-out 0.3s forwards;
+}
+
+@keyframes lineExpand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+/* Subtle shimmer effect on logo */
+.preloader-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 168, 75, 0.15),
+    transparent
+  );
+  animation: shimmer 1.5s ease-in-out 0.5s;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+} 
+/* Success Modal - Premium Styling */
+.success-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.success-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.success-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.success-modal-content {
+  position: relative;
+  background: linear-gradient(145deg, #141414, #0a0a0a);
+  border: 1px solid rgba(212, 168, 75, 0.3);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.4s ease;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(212, 168, 75, 0.1);
+}
+
+.success-modal.active .success-modal-content {
+  transform: scale(1) translateY(0);
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, rgba(212, 168, 75, 0.2), rgba(212, 168, 75, 0.05));
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: successPulse 2s ease-in-out infinite;
+}
+
+.success-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--gold);
+}
+
+@keyframes successPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 168, 75, 0.3); }
+  50% { box-shadow: 0 0 0 15px rgba(212, 168, 75, 0); }
+}
+
+.success-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: var(--gold);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.success-submessage {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.success-submessage strong {
+  color: var(--white);
+}
+
+.success-details {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.success-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.success-detail-item:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.success-detail-icon {
+  font-size: 1.1rem;
+}
+
+.success-btn {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--dark);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.success-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 168, 75, 0.3);
+}
+.section-tag-journey {
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+    <div class="preloader" id="preloader">
+  <div class="preloader-text">
+    <img
+      src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png"
+      alt="logo"
+    />
+  </div>
+  <div class="preloader-line"></div>
+</div>
+  <nav>
+    <a href="index.html" class="logo-text"><img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png" alt="VARA5"></a>
+    <ul class="nav-links">
+      <li><a href="luxury-packages.html" class="back-link"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>Back</a></li>
+      <li><a href="#teams">Teams</a></li>
+      <li><a href="#form" class="nav-cta">Reserve Now</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80" alt="Follow Your Team"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Luxury World Cup Journeys</div>
+      <h1 class="hero-title">Follow Your Team<span>Stay with your colours. Wherever they go.</span></h1>
+      <p class="hero-subtitle">Support your national team from the group stage into the knockout rounds. Routing adapts as your team progresses.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-inner">
+      <span class="section-tag-journey">What's Included</span>
+      <p class="section-subtitle">Follow your team from group stage through the knockout rounds with premium access.</p>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+          <h4>3 Group Matches</h4>
+          <p>All group stage fixtures</p>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg></div>
+          <h4>Knockout Add-ons</h4>
+          <p>Extend as team advances</p>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
+          <h4>Luxury Hotels</h4>
+          <p>Pre-secured stays</p>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+          <h4>Full Logistics</h4>
+          <p>Transfers & concierge</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section" id="teams">
+    <div class="team-inner">
+      <div class="team-header">
+        <span class="section-tag">Step 1</span>
+        <h2 class="section-title">Choose Your Team</h2>
+        <p class="section-subtitle">Select the national team you want to follow throughout the tournament.</p>
+      </div>
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+  </section>
+
+  <section class="journey-section" id="journey">
+    <div class="journey-inner">
+      <div class="journey-header">
+        <span class="section-tag">Step 2</span>
+        <h2 class="section-title">Your Team's Journey</h2>
+      </div>
+      <div class="selected-team-display" id="selectedTeamDisplay"></div>
+      <div class="scenario-tabs" id="scenarioTabs"></div>
+      <div id="matchesContainer"></div>
+      <div class="journey-summary">
+        <div class="summary-bar">
+          <div class="summary-info">
+            <div class="summary-stat"><div class="summary-stat-value" id="includedCount">3</div><div class="summary-stat-label">Included</div></div>
+            <div class="summary-divider"></div>
+            <div class="summary-stat"><div class="summary-stat-value" id="addonCount">0</div><div class="summary-stat-label">Add-ons</div></div>
+            <div class="summary-divider"></div>
+            <div class="summary-stat"><div class="summary-stat-value" id="totalMatches">3</div><div class="summary-stat-label">Total</div></div>
+          </div>
+          <button class="btn btn-primary" onclick="scrollToForm()">Continue<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="form">
+    <div class="form-inner">
+      <div class="form-header">
+        <span class="section-tag-journey">Submit your Request</span>
+        <p class="section-subtitle">Complete the form and our team will confirm availability within 24 hours.</p>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <div class="selected-package-preview" id="packagePreview" style="display:none;">
+          <div class="preview-title">Selected Package</div>
+          <div class="preview-items" id="previewItems"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
+          <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email *</label><input type="email" placeholder="john@example.com" required></div>
+          <div class="form-group"><label>Phone *</label><input type="tel" placeholder="+1 (555) 000-0000" required></div>
+        </div>
+        <div class="form-group full"><label>Guests</label><select><option>1 Guest</option><option selected>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select></div>
+        <div class="form-group full"><label>Package Details</label><textarea id="packageDetails" readonly placeholder="Select a team above..."></textarea></div>
+        <div class="form-group full"><label>Additional Requirements</label><textarea placeholder="Special requests..."></textarea></div>
+        <button type="submit" class="btn btn-primary">Submit Request<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      </form>
+    </div>
+  </section>
+
+  <footer><p>© 2025 Vara5 Journeys Pvt. Ltd. All Rights Reserved.</p></footer>
+
+    <script>
+  // Google Apps Script URL - Replace with your deployed URL
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY05ESVPma4SAKzU7ouScVsYUD0tYbIlZhqEjLUBSoJYmbGl4Bwnbfl-AdFOq6GpAD4w/exec';
+
+  const teamsData={
+    'GER':{name:'Germany',code:'GER',flag:'https://flagcdn.com/w80/de.png',group:'E',
+      groupMatches:[{id:'M10',home:'Germany',away:'Curaçao',date:'June 14',city:'Houston'},{id:'M33',home:'Germany',away:"Côte d'Ivoire",date:'June 20',city:'Toronto'},{id:'M55',home:'Ecuador',away:'Germany',date:'June 25',city:'New York/NJ'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner E vs 3rd Place',date:'June 29',city:'Boston'},{id:'R16',stage:'Round of 16',match:'Winner M74',date:'July 4',city:'Philadelphia'},{id:'QF',stage:'Quarter-Final',match:'Winner M89',date:'July 9',city:'Boston'},{id:'SF',stage:'Semi-Final',match:'Winner M97',date:'July 14',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M101',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up E vs Runner-up I',date:'June 30',city:'Dallas'},{id:'R16',stage:'Round of 16',match:'Winner M78',date:'July 5',city:'New York/NJ'},{id:'QF',stage:'Quarter-Final',match:'Winner M91',date:'July 11',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}},
+    'NED':{name:'Netherlands',code:'NED',flag:'https://flagcdn.com/w80/nl.png',group:'F',
+      groupMatches:[{id:'M11',home:'Netherlands',away:'Japan',date:'June 14',city:'Dallas'},{id:'M32',home:'Netherlands',away:'TBD',date:'June 20',city:'Houston'},{id:'M58',home:'Tunisia',away:'Netherlands',date:'June 25',city:'Kansas City'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner F vs Runner-up C',date:'June 29',city:'Monterrey'},{id:'R16',stage:'Round of 16',match:'Winner M75',date:'July 4',city:'Houston'},{id:'QF',stage:'Quarter-Final',match:'Winner M90',date:'July 9',city:'Boston'},{id:'SF',stage:'Semi-Final',match:'Winner M97',date:'July 14',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M101',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up F vs Winner C',date:'June 29',city:'Houston'},{id:'R16',stage:'Round of 16',match:'Winner M76',date:'July 5',city:'New York/NJ'},{id:'QF',stage:'Quarter-Final',match:'Winner M91',date:'July 11',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}},
+    'ESP':{name:'Spain',code:'ESP',flag:'https://flagcdn.com/w80/es.png',group:'H',
+      groupMatches:[{id:'M14',home:'Spain',away:'Cabo Verde',date:'June 15',city:'Atlanta'},{id:'M38',home:'Spain',away:'Saudi Arabia',date:'June 21',city:'Atlanta'},{id:'M65',home:'Uruguay',away:'Spain',date:'June 26',city:'Guadalajara'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner H vs Runner-up J',date:'July 2',city:'Los Angeles'},{id:'R16',stage:'Round of 16',match:'Winner M84',date:'July 6',city:'Dallas'},{id:'QF',stage:'Quarter-Final',match:'Winner M93',date:'July 10',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M101',date:'July 15',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up H vs Winner J',date:'July 3',city:'Miami'},{id:'R16',stage:'Round of 16',match:'Winner M86',date:'July 7',city:'Atlanta'},{id:'QF',stage:'Quarter-Final',match:'Winner M95',date:'July 11',city:'Kansas City'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}},
+    'BRA':{name:'Brazil',code:'BRA',flag:'https://flagcdn.com/w80/br.png',group:'C',
+      groupMatches:[{id:'M7',home:'Brazil',away:'Morocco',date:'June 13',city:'New York/NJ'},{id:'M29',home:'Brazil',away:'Haiti',date:'June 19',city:'Philadelphia'},{id:'M49',home:'Scotland',away:'Brazil',date:'June 24',city:'Miami'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner C vs Runner-up F',date:'June 29',city:'Houston'},{id:'R16',stage:'Round of 16',match:'Winner M76',date:'July 5',city:'New York/NJ'},{id:'QF',stage:'Quarter-Final',match:'Winner M91',date:'July 11',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up C vs Winner F',date:'June 29',city:'Monterrey'},{id:'R16',stage:'Round of 16',match:'Winner M75',date:'July 4',city:'Houston'},{id:'QF',stage:'Quarter-Final',match:'Winner M90',date:'July 9',city:'Boston'},{id:'SF',stage:'Semi-Final',match:'Winner M97',date:'July 14',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M101',date:'July 19',city:'New York/NJ'}]}},
+    'ARG':{name:'Argentina',code:'ARG',flag:'https://flagcdn.com/w80/ar.png',group:'J',
+      groupMatches:[{id:'M19',home:'Argentina',away:'Algeria',date:'June 16',city:'Kansas City'},{id:'M43',home:'Argentina',away:'Austria',date:'June 22',city:'Dallas'},{id:'M70',home:'Jordan',away:'Argentina',date:'June 27',city:'Dallas'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner J vs Runner-up H',date:'July 3',city:'Miami'},{id:'R16',stage:'Round of 16',match:'Winner M86',date:'July 7',city:'Atlanta'},{id:'QF',stage:'Quarter-Final',match:'Winner M95',date:'July 11',city:'Kansas City'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up J vs Winner H',date:'July 2',city:'Los Angeles'},{id:'R16',stage:'Round of 16',match:'Winner M84',date:'July 6',city:'Dallas'},{id:'QF',stage:'Quarter-Final',match:'Winner M93',date:'July 10',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M101',date:'July 15',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}},
+    'POR':{name:'Portugal',code:'POR',flag:'https://flagcdn.com/w80/pt.png',group:'K',
+      groupMatches:[{id:'M23',home:'Portugal',away:'TBD',date:'June 17',city:'Houston'},{id:'M47',home:'Portugal',away:'Uzbekistan',date:'June 23',city:'Houston'},{id:'M72',home:'Colombia',away:'Portugal',date:'June 27',city:'Miami'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner K vs 3rd Place',date:'July 3',city:'Kansas City'},{id:'R16',stage:'Round of 16',match:'Winner M87',date:'July 7',city:'Vancouver'},{id:'QF',stage:'Quarter-Final',match:'Winner M96',date:'July 11',city:'Kansas City'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up K vs Runner-up L',date:'July 2',city:'Toronto'},{id:'R16',stage:'Round of 16',match:'Winner M83',date:'July 6',city:'Dallas'},{id:'QF',stage:'Quarter-Final',match:'Winner M93',date:'July 10',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M101',date:'July 15',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}},
+    'FRA':{name:'France',code:'FRA',flag:'https://flagcdn.com/w80/fr.png',group:'I',
+      groupMatches:[{id:'M17',home:'France',away:'Senegal',date:'June 16',city:'New York/NJ'},{id:'M42',home:'France',away:'TBD',date:'June 22',city:'Philadelphia'},{id:'M61',home:'Norway',away:'France',date:'June 26',city:'Boston'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner I vs 3rd Place',date:'June 30',city:'New York/NJ'},{id:'R16',stage:'Round of 16',match:'Winner M77',date:'July 4',city:'Philadelphia'},{id:'QF',stage:'Quarter-Final',match:'Winner M89',date:'July 9',city:'Boston'},{id:'SF',stage:'Semi-Final',match:'Winner M97',date:'July 14',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M101',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up I vs Runner-up E',date:'June 30',city:'Dallas'},{id:'R16',stage:'Round of 16',match:'Winner M78',date:'July 5',city:'New York/NJ'},{id:'QF',stage:'Quarter-Final',match:'Winner M91',date:'July 11',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}},
+    'ENG':{name:'England',code:'ENG',flag:'https://flagcdn.com/w80/gb-eng.png',group:'L',
+      groupMatches:[{id:'M22',home:'England',away:'Croatia',date:'June 17',city:'Dallas'},{id:'M46',home:'England',away:'Ghana',date:'June 23',city:'Boston'},{id:'M68',home:'Panama',away:'England',date:'June 27',city:'New York/NJ'}],
+      scenarios:{'1st':[{id:'R32',stage:'Round of 32',match:'Winner L vs 3rd Place',date:'July 1',city:'Atlanta'},{id:'R16',stage:'Round of 16',match:'Winner M80',date:'July 6',city:'Mexico City'},{id:'QF',stage:'Quarter-Final',match:'Winner M92',date:'July 10',city:'Mexico City'},{id:'SF',stage:'Semi-Final',match:'Winner M102',date:'July 15',city:'Atlanta'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}],
+      '2nd':[{id:'R32',stage:'Round of 32',match:'Runner-up L vs Runner-up K',date:'July 2',city:'Toronto'},{id:'R16',stage:'Round of 16',match:'Winner M83',date:'July 6',city:'Dallas'},{id:'QF',stage:'Quarter-Final',match:'Winner M93',date:'July 10',city:'Los Angeles'},{id:'SF',stage:'Semi-Final',match:'Winner M101',date:'July 15',city:'Dallas'},{id:'F',stage:'Final',match:'Winner M104',date:'July 19',city:'New York/NJ'}]}}
+  };
+
+  let selectedTeam = null;
+  let selectedScenario = '1st';
+  let selectedAddons = new Set();
+
+  function renderTeamGrid() {
+    document.getElementById('teamGrid').innerHTML = Object.values(teamsData).map(t => `
+      <div class="team-card" data-code="${t.code}" onclick="selectTeam('${t.code}')">
+        <div class="team-checkbox">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <div class="team-flag"><img src="${t.flag}" alt="${t.name}"></div>
+        <div class="team-name">${t.name}</div>
+        <div class="team-code">Group ${t.group}</div>
+      </div>
+    `).join('');
+  }
+
+  function selectTeam(code) {
+    selectedTeam = teamsData[code];
+    selectedAddons.clear();
+    document.querySelectorAll('.team-card').forEach(c => c.classList.toggle('selected', c.dataset.code === code));
+    document.getElementById('journey').classList.add('visible');
+    renderJourney();
+    setTimeout(() => document.getElementById('journey').scrollIntoView({ behavior: 'smooth' }), 100);
+  }
+
+  function renderJourney() {
+    if (!selectedTeam) return;
+    document.getElementById('selectedTeamDisplay').innerHTML = `
+      <div class="selected-team-flag"><img src="${selectedTeam.flag}"></div>
+      <div class="selected-team-name">${selectedTeam.name}</div>
+    `;
+    document.getElementById('scenarioTabs').innerHTML = `
+      <div class="scenario-tab ${selectedScenario === '1st' ? 'active' : ''}" onclick="setScenario('1st')">If they qualify 1st</div>
+      <div class="scenario-tab ${selectedScenario === '2nd' ? 'active' : ''}" onclick="setScenario('2nd')">If they qualify 2nd</div>
+    `;
+    renderMatches();
+  }
+
+  function setScenario(s) {
+    selectedScenario = s;
+    selectedAddons.clear();
+    renderJourney();
+  }
+
+  function renderMatches() {
+    const c = document.getElementById('matchesContainer');
+    const s = selectedTeam.scenarios[selectedScenario];
+    c.innerHTML = `
+      <div class="stage-container">
+        <div class="stage-header">
+          <span class="stage-badge">Group Stage</span>
+          <span class="stage-info">Included in package</span>
+        </div>
+        <div class="matches-list">
+          ${selectedTeam.groupMatches.map(m => `
+            <div class="match-card included">
+              <div class="match-number">${m.id}</div>
+              <div class="match-teams-row">
+                <span class="match-team-name">${m.home}</span>
+                <span class="match-vs">vs</span>
+                <span class="match-team-name">${m.away}</span>
+              </div>
+              <div class="match-details">
+                <div class="match-date">${m.date}</div>
+                <div class="match-venue">${m.city}</div>
+              </div>
+              <div class="match-included-badge">Included</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div class="stage-container">
+        <div class="stage-header">
+          <span class="stage-badge addon">Knockout Rounds</span>
+          <span class="stage-info">Add as your team progresses</span>
+        </div>
+        <div class="matches-list">
+          ${s.map(m => `
+            <div class="match-card addon-match ${selectedAddons.has(m.id) ? 'selected' : ''}">
+              <div class="match-number">${m.stage}</div>
+              <div class="match-teams-row">
+                <span class="match-team-name">${m.match}</span>
+              </div>
+              <div class="match-details">
+                <div class="match-date">${m.date}</div>
+                <div class="match-venue">${m.city}</div>
+              </div>
+              <div class="addon-checkbox ${selectedAddons.has(m.id) ? 'checked' : ''}" onclick="toggleAddon('${m.id}')">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    updateSummary();
+  }
+
+  function toggleAddon(id) {
+    selectedAddons.has(id) ? selectedAddons.delete(id) : selectedAddons.add(id);
+    renderMatches();
+    updateFormPreview();
+  }
+
+  function updateSummary() {
+    document.getElementById('includedCount').textContent = selectedTeam ? selectedTeam.groupMatches.length : 0;
+    document.getElementById('addonCount').textContent = selectedAddons.size;
+    document.getElementById('totalMatches').textContent = (selectedTeam ? selectedTeam.groupMatches.length : 0) + selectedAddons.size;
+    updateFormPreview();
+  }
+
+  function updateFormPreview() {
+    if (!selectedTeam) return;
+    const p = document.getElementById('packagePreview');
+    const i = document.getElementById('previewItems');
+    const d = document.getElementById('packageDetails');
+    
+    p.style.display = 'block';
+    
+    let h = `<span class="preview-item">${selectedTeam.name} - Group ${selectedTeam.group}</span>`;
+    selectedTeam.groupMatches.forEach(m => h += `<span class="preview-item">${m.home} vs ${m.away}</span>`);
+    selectedTeam.scenarios[selectedScenario].forEach(m => {
+      if (selectedAddons.has(m.id)) h += `<span class="preview-item" style="background:rgba(156,39,176,0.2)">${m.stage}</span>`;
+    });
+    i.innerHTML = h;
+    
+    let t = `FOLLOW YOUR TEAM: ${selectedTeam.name} (Group ${selectedTeam.group})\n\nGROUP STAGE (Included):\n`;
+    selectedTeam.groupMatches.forEach(m => t += `• ${m.home} vs ${m.away} - ${m.date} - ${m.city}\n`);
+    if (selectedAddons.size > 0) {
+      t += `\nKNOCKOUT ADD-ONS (If finish ${selectedScenario}):\n`;
+      selectedTeam.scenarios[selectedScenario].forEach(m => {
+        if (selectedAddons.has(m.id)) t += `• ${m.stage} - ${m.date} - ${m.city}\n`;
+      });
+    }
+    d.value = t;
+  }
+
+  function scrollToForm() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Success Modal HTML
+  function createSuccessModal() {
+    const modalHTML = `
+      <div id="successModal" class="success-modal">
+        <div class="success-modal-overlay"></div>
+        <div class="success-modal-content">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="16 10 11 15 8 12"></polyline>
+            </svg>
+          </div>
+          <h2 class="success-title">Request Submitted Successfully</h2>
+          <p class="success-message">Thank you for choosing VARA5 for your World Cup journey.</p>
+          <p class="success-submessage">Our expert team will review your request and get back to you within <strong>24 hours</strong> with a personalized proposal.</p>
+          <button class="success-btn" onclick="closeSuccessModal()">Continue Exploring</button>
+        </div>
+      </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+  }
+
+  function showSuccessModal() {
+    document.getElementById('successModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSuccessModal() {
+    document.getElementById('successModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Form Submission Handler
+  document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalBtnText = btn.innerHTML;
+    
+    // Validate team selection
+    if (!selectedTeam) {
+      alert('Please select a team first');
+      document.getElementById('teams').scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    
+    // Collect form data
+    const formData = {
+      formType: 'follow-team',
+      firstName: form.querySelector('input[placeholder="John"]').value.trim(),
+      lastName: form.querySelector('input[placeholder="Smith"]').value.trim(),
+      email: form.querySelector('input[type="email"]').value.trim(),
+      phone: form.querySelector('input[type="tel"]').value.trim() || 'Not provided',
+      guests: form.querySelector('select').value,
+      team: selectedTeam.name,
+      packageDetails: document.getElementById('packageDetails').value,
+      specialRequests: form.querySelectorAll('textarea')[1]?.value.trim() || ''
+    };
+    
+    // Show loading state
+    btn.innerHTML = `
+      <svg viewBox="0 0 24 24" style="animation: spin 1s linear infinite; width: 18px; height: 18px;">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="30 70"></circle>
+      </svg>
+      Processing...
+    `;
+    btn.disabled = true;
+    btn.style.opacity = '0.7';
+    
+    try {
+      // Send to Google Apps Script
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      // Show success modal
+      showSuccessModal();
+      
+      // Reset button
+      btn.innerHTML = originalBtnText;
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      
+      // Reset form and state
+      form.reset();
+      selectedTeam = null;
+      selectedAddons.clear();
+      document.querySelectorAll('.team-card').forEach(c => c.classList.remove('selected'));
+      document.getElementById('journey').classList.remove('visible');
+      document.getElementById('packagePreview').style.display = 'none';
+      document.getElementById('packageDetails').value = '';
+      
+    } catch (error) {
+      console.error('Submission error:', error);
+      
+      // Still show success (no-cors doesn't return response)
+      showSuccessModal();
+      
+      // Reset button
+      btn.innerHTML = originalBtnText;
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      
+      // Reset form
+      form.reset();
+      selectedTeam = null;
+      selectedAddons.clear();
+      document.querySelectorAll('.team-card').forEach(c => c.classList.remove('selected'));
+      document.getElementById('journey').classList.remove('visible');
+    }
+  });
+
+  // Initialize
+  renderTeamGrid();
+  createSuccessModal();
+
+  // Preloader
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("preloader").classList.add("hidden");
+    }, 1800);
+  });
+</script>
+  </script>
+</body>
+</html>

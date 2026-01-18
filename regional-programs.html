@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regional Journeys | VARA5 World Cup 2026</title>
+  <title>Regional World Cup 2026 Journeys | VARA5</title>
+<meta name="description" content="Experience World Cup 2026 regionally. Multiple matches in one city with luxury hotels and premium seating. VARA5 regional packages.">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpqly9rlk/image/upload/v1768294600/logo_favicon_1_inrvfo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #d4a84b;
+      --gold-light: #e8c97a;
+      --gold-dark: #b8942f;
+      --dark: #0d0d0d;
+      --darker: #070707;
+      --white: #fff;
+      --red: #c41e3a;
+      --accent: #1db954;
+      --western: #4CAF50;
+      --central: #FF9800;
+      --eastern: #2196F3;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: var(--darker);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--darker); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(7, 7, 7, 0.95);
+      backdrop-filter: blur(30px);
+      border-bottom: 1px solid rgba(212, 168, 75, 0.1);
+    }
+
+    .logo-text img { width: 6rem; height: auto; }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--dark) !important;
+      padding: 10px 20px !important;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold) !important;
+    }
+
+    .back-link svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* Hero Section */
+    .hero-regional {
+      position: relative;
+      height: 55vh;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.35);
+      transform: scale(1.1);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7, 7, 7, 0.4) 0%, rgba(7, 7, 7, 0.6) 50%, rgba(7, 7, 7, 1) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 1.5rem;
+      background: rgba(212, 168, 75, 0.1);
+      border: 1px solid rgba(212, 168, 75, 0.3);
+      border-radius: 50px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title span {
+      display: block;
+      font-weight: 300;
+      font-size: 0.4em;
+      letter-spacing: 6px;
+      color: var(--gold);
+      margin-top: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 550px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* Section Styles */
+    .section-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .section-subtitle {
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 4rem 5%;
+      background: var(--darker);
+    }
+
+    .about-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .about-feature {
+      text-align: center;
+      padding: 1.25rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .about-feature:hover {
+      border-color: rgba(212, 168, 75, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .about-feature-icon {
+      width: 45px;
+      height: 45px;
+      margin: 0 auto 0.75rem;
+      background: rgba(212, 168, 75, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+    }
+
+    .about-feature-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    .about-feature h4 {
+      font-family: "Oswald", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+
+    .about-feature p {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.5;
+    }
+
+    /* Program Builder Section */
+    .builder-section {
+      padding: 4rem 5%;
+      background: linear-gradient(180deg, var(--dark), var(--darker));
+    }
+
+    .builder-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .builder-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .builder-steps {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 2.5rem;
+    }
+
+    .builder-step {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .builder-step:first-child { border-radius: 50px 0 0 50px; }
+    .builder-step:last-child { border-radius: 0 50px 50px 0; }
+
+    .builder-step.active {
+      background: rgba(212, 168, 75, 0.1);
+      border-color: rgba(212, 168, 75, 0.3);
+    }
+
+    .builder-step.completed {
+      background: rgba(29, 185, 84, 0.1);
+      border-color: rgba(29, 185, 84, 0.3);
+    }
+
+    .step-number {
+      width: 26px;
+      height: 26px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .builder-step.active .step-number {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .builder-step.completed .step-number {
+      background: var(--accent);
+      color: var(--dark);
+    }
+
+    .step-text {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .builder-step.active .step-text,
+    .builder-step.completed .step-text {
+      color: var(--white);
+    }
+
+    /* Selection Container */
+    .selection-container {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .selection-title {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .selection-title svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--gold);
+      fill: none;
+    }
+
+    /* Region Selection */
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .region-card {
+      position: relative;
+      padding: 1.25rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 2px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .region-card:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .region-card.selected {
+      border-color: var(--gold);
+      background: rgba(212, 168, 75, 0.08);
+    }
+
+    .region-card.western.selected { border-color: var(--western); background: rgba(76, 175, 80, 0.1); }
+    .region-card.central.selected { border-color: var(--central); background: rgba(255, 152, 0, 0.1); }
+    .region-card.eastern.selected { border-color: var(--eastern); background: rgba(33, 150, 243, 0.1); }
+    .region-card.mexico.selected { border-color: var(--mexico); background: rgba(233, 30, 99, 0.1); }
+
+    .region-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 auto 0.6rem;
+    }
+
+    .region-card.western .region-indicator { background: var(--western); }
+    .region-card.central .region-indicator { background: var(--central); }
+    .region-card.eastern .region-indicator { background: var(--eastern); }
+    .region-card.mexico .region-indicator { background: var(--mexico); }
+
+    .region-name {
+      font-family: "Oswald", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    .region-cities {
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .region-checkbox {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.6rem;
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .region-card.selected .region-checkbox {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .region-card.western.selected .region-checkbox { background: var(--western); border-color: var(--western); }
+    .region-card.central.selected .region-checkbox { background: var(--central); border-color: var(--central); }
+    .region-card.eastern.selected .region-checkbox { background: var(--eastern); border-color: var(--eastern); }
+    .region-card.mexico.selected .region-checkbox { background: var(--mexico); border-color: var(--mexico); }
+
+    .region-checkbox svg {
+      width: 10px;
+      height: 10px;
+      stroke: var(--dark);
+      fill: none;
+      stroke-width: 3;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .region-card.selected .region-checkbox svg { opacity: 1; }
+
+    /* City Selection */
+    .city-selection {
+      display: none;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .city-selection.visible { display: block; }
+
+    .city-group { margin-bottom: 1.25rem; }
+
+    .city-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .city-group-indicator {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .city-group.western .city-group-indicator { background: var(--western); }
+    .city-group.central .city-group-indicator { background: var(--central); }
+    .city-group.eastern .city-group-indicator { background: var(--eastern); }
+    .city-group.mexico .city-group-indicator { background: var(--mexico); }
+
+    .city-group-name {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .city-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .city-chip {
+      padding: 0.4rem 0.85rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      font-size: 0.7rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .city-chip:hover { border-color: rgba(255, 255, 255, 0.3); }
+
+    .city-chip.selected {
+      background: rgba(212, 168, 75, 0.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .city-chip-check {
+      width: 12px;
+      height: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .city-chip.selected .city-chip-check {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .city-chip-check svg {
+      width: 8px;
+      height: 8px;
+      stroke: var(--dark);
+      fill: none;
+      stroke-width: 3;
+      opacity: 0;
+    }
+
+    .city-chip.selected .city-chip-check svg { opacity: 1; }
+
+    /* Date Selection */
+    .date-selection {
+      display: none;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .date-selection.visible { display: block; }
+
+    .date-toggle {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .date-toggle-btn {
+      padding: 0.6rem 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .date-toggle-btn.active {
+      background: rgba(212, 168, 75, 0.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .date-range-inputs {
+      display: none;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .date-range-inputs.visible { display: flex; }
+
+    .date-input-group { flex: 1; }
+
+    .date-input-group label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0.4rem;
+    }
+
+    .date-input-group input {
+      width: 100%;
+      padding: 0.6rem 0.85rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8rem;
+    }
+
+    .date-input-group input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    /* Match Grid */
+    .match-grid-container {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .match-grid-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .match-count {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .match-count strong {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .select-all-btn {
+      padding: 0.4rem 0.85rem;
+      background: transparent;
+      border: 1px solid rgba(212, 168, 75, 0.4);
+      border-radius: 50px;
+      color: var(--gold);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .select-all-btn:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .match-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 0.85rem;
+      max-height: 550px;
+      overflow-y: auto;
+      padding-right: 0.4rem;
+    }
+
+    .match-grid::-webkit-scrollbar { width: 4px; }
+    .match-grid::-webkit-scrollbar-thumb {
+      background: rgba(212, 168, 75, 0.3);
+      border-radius: 2px;
+    }
+
+    /* Match Card */
+    /* Match Card - New Design */
+.match-card {
+  position: relative;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.match-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+.match-card.selected {
+  border-color: var(--gold);
+  background: rgba(212, 168, 75, 0.08);
+}
+
+.match-card-checkbox {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.match-card.selected .match-card-checkbox {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.match-card-checkbox svg {
+  width: 12px;
+  height: 12px;
+  stroke: var(--dark);
+  fill: none;
+  stroke-width: 3;
+  opacity: 0;
+}
+
+.match-card.selected .match-card-checkbox svg { opacity: 1; }
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.match-stage {
+  padding: 0.3rem 0.75rem;
+  background: rgba(212, 168, 75, 0.15);
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.match-number {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.match-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.match-team-flag {
+  width: 48px;
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.match-team-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.match-team-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.match-vs {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+}
+
+.match-info {
+  text-align: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.match-date {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.match-venue {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Match Grid - No internal scroll */
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .match-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .match-grid { grid-template-columns: 1fr; }
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: rgba(212, 168, 75, 0.15);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pagination-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.pagination-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Oswald", sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pagination-number:hover {
+  border-color: rgba(212, 168, 75, 0.3);
+  color: var(--white);
+}
+
+.pagination-number.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--dark);
+}
+
+.pagination-info {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-left: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .match-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .match-grid { grid-template-columns: 1fr; }
+}
+
+    .match-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .match-card.selected {
+      border-color: var(--gold);
+      background: linear-gradient(145deg, rgba(212, 168, 75, 0.08), rgba(212, 168, 75, 0.02));
+    }
+
+    .match-card-checkbox {
+      position: absolute;
+      top: 0.85rem;
+      right: 0.85rem;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .match-card.selected .match-card-checkbox {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .match-card-checkbox svg {
+      width: 10px;
+      height: 10px;
+      stroke: var(--dark);
+      fill: none;
+      stroke-width: 3;
+      opacity: 0;
+    }
+
+    .match-card.selected .match-card-checkbox svg { opacity: 1; }
+
+    .match-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.85rem;
+      font-size: 0.6rem;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .match-stage {
+      padding: 0.2rem 0.4rem;
+      background: rgba(212, 168, 75, 0.15);
+      border-radius: 3px;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .match-teams {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .match-team {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex: 1;
+    }
+
+    .match-team:first-child {
+      justify-content: flex-end;
+      text-align: right;
+    }
+
+    .match-team:last-child { justify-content: flex-start; }
+
+    .team-flag {
+      width: 26px;
+      height: 18px;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+
+    .team-name {
+      font-family: "Oswald", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .match-vs {
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.3);
+      font-weight: 600;
+    }
+
+    .match-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.6rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .match-venue, .match-datetime {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .match-venue svg, .match-datetime svg {
+      width: 10px;
+      height: 10px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* Selection Summary */
+    .selection-summary {
+      position: sticky;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent, var(--darker) 20%);
+      padding: 1.5rem 0 0;
+      margin-top: 1.5rem;
+    }
+
+    .summary-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 1.75rem;
+      background: linear-gradient(135deg, rgba(212, 168, 75, 0.1), rgba(212, 168, 75, 0.05));
+      border: 1px solid rgba(212, 168, 75, 0.2);
+      border-radius: 14px;
+    }
+
+    .summary-info {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .summary-stat { text-align: center; }
+
+    .summary-stat-value {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .summary-stat-label {
+      font-size: 0.6rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 0.2rem;
+    }
+
+    .summary-divider {
+      width: 1px;
+      height: 35px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+      padding: 0.85rem 1.75rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.4s;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(212, 168, 75, 0.3);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .btn svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* Form Section */
+    .form-section {
+      padding: 4rem 5%;
+      background: var(--darker);
+    }
+
+    .form-inner {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .booking-form {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 18px;
+      padding: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group.full { grid-column: 1 / -1; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: rgba(212, 168, 75, 0.05);
+    }
+
+    .form-group textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23D4A84B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+    }
+
+    .form-group select option {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .selected-matches-preview {
+      background: rgba(212, 168, 75, 0.05);
+      border: 1px solid rgba(212, 168, 75, 0.15);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .preview-title {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+
+    .preview-matches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .preview-match-chip {
+      padding: 0.35rem 0.6rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .booking-form .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 1.5rem 5%;
+      background: var(--darker);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    footer p {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 0.75rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .region-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-features { grid-template-columns: repeat(2, 1fr); }
+      .builder-steps { flex-wrap: wrap; gap: 0.4rem; }
+      .builder-step { border-radius: 50px !important; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0.6rem 5%; }
+      .nav-links { display: none; }
+      .hero-regional { height: 45vh; min-height: 320px; }
+      .hero-title { font-size: 2rem; letter-spacing: 4px; }
+      .selection-container { padding: 1.25rem; }
+      .region-grid { grid-template-columns: 1fr; }
+      .match-grid { grid-template-columns: 1fr; }
+      .summary-bar { flex-direction: column; gap: 1.25rem; text-align: center; }
+      .summary-info { gap: 1.25rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .booking-form { padding: 1.25rem; }
+      .about-features { grid-template-columns: 1fr; }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+
+    .preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--darker);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-text {
+  position: relative;
+  width: 120px;
+  height: auto;
+}
+
+.preloader-text img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: logoFadeIn 1.2s ease-out forwards;
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Subtle gold line animation below logo */
+.preloader-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin-top: 1.5rem;
+  animation: lineExpand 1s ease-out 0.3s forwards;
+}
+
+@keyframes lineExpand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+/* Subtle shimmer effect on logo */
+.preloader-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 168, 75, 0.15),
+    transparent
+  );
+  animation: shimmer 1.5s ease-in-out 0.5s;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Disabled/Grayed out match cards */
+.match-card.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  filter: grayscale(50%);
+}
+
+.match-card.disabled:hover {
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Info message styling */
+.selection-info-message {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(212, 168, 75, 0.1);
+  border: 1px solid rgba(212, 168, 75, 0.25);
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.selection-info-message.visible {
+  display: flex;
+}
+
+.selection-info-message svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gold);
+  fill: none;
+  flex-shrink: 0;
+}
+
+.selection-info-message strong {
+  color: var(--gold);
+}
+
+/* Same day indicator on cards */
+.match-card .same-day-locked {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: none;
+}
+
+.match-card.disabled .same-day-locked {
+  display: block;
+}
+/* Success Modal - Premium Styling */
+.success-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.success-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.success-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.success-modal-content {
+  position: relative;
+  background: linear-gradient(145deg, #141414, #0a0a0a);
+  border: 1px solid rgba(212, 168, 75, 0.3);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.4s ease;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(212, 168, 75, 0.1);
+}
+
+.success-modal.active .success-modal-content {
+  transform: scale(1) translateY(0);
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, rgba(212, 168, 75, 0.2), rgba(212, 168, 75, 0.05));
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: successPulse 2s ease-in-out infinite;
+}
+
+.success-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--gold);
+}
+
+@keyframes successPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 168, 75, 0.3); }
+  50% { box-shadow: 0 0 0 15px rgba(212, 168, 75, 0); }
+}
+
+.success-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: var(--gold);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.success-submessage {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.success-submessage strong {
+  color: var(--white);
+}
+
+.success-details {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.success-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.success-detail-item:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.success-detail-icon {
+  font-size: 1.1rem;
+}
+
+.success-btn {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--dark);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.success-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 168, 75, 0.3);
+}
+.section-tag-journey {
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="preloader" id="preloader">
+  <div class="preloader-text">
+    <img
+      src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png"
+      alt="logo"
+    />
+  </div>
+  <div class="preloader-line"></div>
+</div>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo-text">
+      <img src="https://res.cloudinary.com/dpqly9rlk/image/upload/v1766565974/logo_vara5_gold_1_ochhjo.png" alt="VARA5">
+    </a>
+    <ul class="nav-links">
+      <li><a href="luxury-packages.html" class="back-link">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        Back
+      </a></li>
+      <li><a href="#builder">Build Program</a></li>
+      <li><a href="#form" class="nav-cta">Reserve Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-regional">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1920&q=80" alt="Regional Programs">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Luxury World Cup Journeys</div>
+      <h1 class="hero-title">
+        Regional Journeys
+        <span>One Region. Maximum Immersion.</span>
+      </h1>
+      <p class="hero-subtitle">Design your World Cup journey around a single geographic zone. Premium seating, luxury hotels, seamless logistics.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-inner">
+      <span class="section-tag-journey">What's Included</span>
+      <p class="section-subtitle">Stay in one place while experiencing 3-4 matches with minimal travel.</p>
+
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h4>3-4 Matches</h4>
+          <p>Premium or Category 1 seating</p>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <h4>Luxury Hotel</h4>
+          <p>Pre-secured accommodations</p>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h4>Matchday Transfers</h4>
+          <p>Seamless ground transport</p>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h4>Full Logistics</h4>
+          <p>Transfers & concierge</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Builder Section -->
+  <section class="builder-section" id="builder">
+    <div class="builder-inner">
+      <div class="builder-header">
+        <span class="section-tag">Build Your Program</span>
+        <h2 class="section-title">Select Your Matches</h2>
+        <p class="section-subtitle">Choose regions, cities, and dates to see available matches.</p>
+      </div>
+
+      <div class="builder-steps">
+        <div class="builder-step active" data-step="1">
+          <span class="step-number">1</span>
+          <span class="step-text">Regions</span>
+        </div>
+        <div class="builder-step" data-step="2">
+          <span class="step-number">2</span>
+          <span class="step-text">Cities</span>
+        </div>
+        <div class="builder-step" data-step="3">
+          <span class="step-number">3</span>
+          <span class="step-text">Dates</span>
+        </div>
+        <div class="builder-step" data-step="4">
+          <span class="step-number">4</span>
+          <span class="step-text">Matches</span>
+        </div>
+      </div>
+
+      <!-- Selection Container -->
+      <div class="selection-container">
+        <div class="selection-title">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          Select Regions
+        </div>
+
+        <div class="region-grid" style="grid-template-columns: repeat(3, 1fr);">
+  <div class="region-card western" data-region="western" onclick="toggleRegion(this)">
+    <div class="region-checkbox"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+    <div class="region-indicator"></div>
+    <div class="region-name">Western</div>
+    <div class="region-cities">Vancouver, Seattle, SF Bay Area, LA</div>
+  </div>
+  <div class="region-card central" data-region="central" onclick="toggleRegion(this)">
+    <div class="region-checkbox"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+    <div class="region-indicator"></div>
+    <div class="region-name">Central</div>
+    <div class="region-cities">Guadalajara , Mexico City, Monterrey, Houston, Dallas, KC, Atlanta</div>
+  </div>
+  <div class="region-card eastern" data-region="eastern" onclick="toggleRegion(this)">
+    <div class="region-checkbox"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+    <div class="region-indicator"></div>
+    <div class="region-name">Eastern</div>
+    <div class="region-cities">Miami, Toronto, Boston, Philadelphia, NY/NJ</div>
+  </div>
+</div>
+
+        <!-- City Selection -->
+        <div class="city-selection" id="citySelection">
+          <div class="selection-title">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Handpick your Cities
+          </div>
+          <div id="cityGroups"></div>
+        </div>
+
+        <!-- Date Selection -->
+        <div class="date-selection" id="dateSelection">
+          <div class="selection-title">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Filter by Date (Optional)
+          </div>
+          <div class="date-toggle">
+            <button class="date-toggle-btn active" onclick="setDateMode('all')">All Dates</button>
+            <button class="date-toggle-btn" onclick="setDateMode('custom')">Custom Range</button>
+          </div>
+          <div class="date-range-inputs" id="dateRangeInputs">
+            <div class="date-input-group">
+              <label>From</label>
+              <input type="date" id="dateFrom" min="2026-06-11" max="2026-07-19" value="2026-06-11" onchange="filterMatches()">
+            </div>
+            <div class="date-input-group">
+              <label>To</label>
+              <input type="date" id="dateTo" min="2026-06-11" max="2026-07-19" value="2026-07-19" onchange="filterMatches()">
+            </div>
+          </div>
+        </div>
+
+        <!-- Match Grid -->
+        <div class="match-grid-container" id="matchGridContainer" style="display: none;">
+          <div class="match-grid-header">
+            <div class="match-count">Showing <strong id="matchCountNum">0</strong> matches</div>
+            <button class="select-all-btn" onclick="selectAllMatches()">Select All</button>
+          </div>
+          <div class="match-grid" id="matchGrid"></div>
+<div class="pagination" id="pagination" style="display: none;">
+  <button class="pagination-btn" id="prevPageBtn" onclick="changePage(-1)">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    Previous
+  </button>
+  <div class="pagination-numbers" id="paginationNumbers"></div>
+  <button class="pagination-btn" id="nextPageBtn" onclick="changePage(1)">
+    Next
+    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+  <span class="pagination-info" id="paginationInfo"></span>
+</div>
+<div class="selection-info-message" id="selectionInfoMessage">
+  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+  <span><strong>One match per day selected.</strong> You can manually change any selected match to another on the same day by deselecting it first.</span>
+</div>
+        </div>
+      </div>
+
+      <!-- Selection Summary -->
+      <div class="selection-summary">
+        <div class="summary-bar">
+          <div class="summary-info">
+            <div class="summary-stat">
+              <div class="summary-stat-value" id="selectedRegions">0</div>
+              <div class="summary-stat-label">Regions</div>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-stat">
+              <div class="summary-stat-value" id="selectedCities">0</div>
+              <div class="summary-stat-label">Cities</div>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-stat">
+              <div class="summary-stat-value" id="selectedMatches">0</div>
+              <div class="summary-stat-label">Matches</div>
+            </div>
+          </div>
+          <div class="summary-actions">
+            <button class="btn btn-primary" id="continueBtn" onclick="scrollToForm()" disabled>
+              Continue to Request
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section" id="form">
+    <div class="form-inner">
+      <div class="form-header">
+        <span class="section-tag-journey">Submit your Request</span>
+        <!-- <h2 class="section-title">Secure Your Experience</h2> -->
+        <p class="section-subtitle">Complete the form and our team will confirm availability within 24 hours.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="selected-matches-preview" id="matchesPreview" style="display: none;">
+          <div class="preview-title">Selected Matches</div>
+          <div class="preview-matches" id="previewMatches"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" placeholder="Smith" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+1 (555) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label>Number of Guests</label>
+          <select>
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5+">5+ Guests (Group Booking)</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label>Selected Matches (Auto-filled)</label>
+          <textarea id="selectedMatchesText" placeholder="Select matches above to auto-populate..." readonly></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label>Additional Requirements</label>
+          <textarea placeholder="Tell us about any special requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Submit Request
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vara5 Journeys Pvt. Ltd. All Rights Reserved.</p>
+  </footer>
+
+ <script>
+// Google Apps Script URL - Use your existing deployed URL
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY05ESVPma4SAKzU7ouScVsYUD0tYbIlZhqEjLUBSoJYmbGl4Bwnbfl-AdFOq6GpAD4w/exec';
+
+// Match Database - FIFA World Cup 2026
+const matchDatabase = [
+  // WESTERN - Vancouver
+  { id: 1, home: 'Australia', away: 'TBD', homeFlag: 'au', awayFlag: 'un', city: 'Vancouver', stadium: 'BC Place', date: '2026-06-13', time: '13:00', stage: 'Group D', region: 'western' },
+  { id: 2, home: 'Canada', away: 'Qatar', homeFlag: 'ca', awayFlag: 'qa', city: 'Vancouver', stadium: 'BC Place', date: '2026-06-17', time: '18:00', stage: 'Group B', region: 'western' },
+  { id: 3, home: 'New Zealand', away: 'Egypt', homeFlag: 'nz', awayFlag: 'eg', city: 'Vancouver', stadium: 'BC Place', date: '2026-06-20', time: '15:00', stage: 'Group G', region: 'western' },
+  { id: 4, home: 'Switzerland', away: 'Canada', homeFlag: 'ch', awayFlag: 'ca', city: 'Vancouver', stadium: 'BC Place', date: '2026-06-22', time: '18:00', stage: 'Group B', region: 'western' },
+  { id: 5, home: 'New Zealand', away: 'Belgium', homeFlag: 'nz', awayFlag: 'be', city: 'Vancouver', stadium: 'BC Place', date: '2026-06-26', time: '16:00', stage: 'Group G', region: 'western' },
+  { id: 85, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Vancouver', stadium: 'BC Place', date: '2026-07-06', time: '16:00', stage: 'R16', region: 'western' },
+  // WESTERN - Seattle
+  { id: 6, home: 'Belgium', away: 'Egypt', homeFlag: 'be', awayFlag: 'eg', city: 'Seattle', stadium: 'Lumen Field', date: '2026-06-14', time: '21:00', stage: 'Group G', region: 'western' },
+  { id: 7, home: 'USA', away: 'Australia', homeFlag: 'us', awayFlag: 'au', city: 'Seattle', stadium: 'Lumen Field', date: '2026-06-19', time: '18:00', stage: 'Group D', region: 'western' },
+  { id: 8, home: 'TBD', away: 'Qatar', homeFlag: 'un', awayFlag: 'qa', city: 'Seattle', stadium: 'Lumen Field', date: '2026-06-22', time: '15:00', stage: 'Group B', region: 'western' },
+  { id: 9, home: 'Egypt', away: 'Iran', homeFlag: 'eg', awayFlag: 'ir', city: 'Seattle', stadium: 'Lumen Field', date: '2026-06-26', time: '15:00', stage: 'Group G', region: 'western' },
+  { id: 81, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Seattle', stadium: 'Lumen Field', date: '2026-07-05', time: '17:00', stage: 'R16', region: 'western' },
+  // WESTERN - San Francisco
+  { id: 10, home: 'Qatar', away: 'Switzerland', homeFlag: 'qa', awayFlag: 'ch', city: 'San Francisco', stadium: "Levi's Stadium", date: '2026-06-13', time: '21:00', stage: 'Group B', region: 'western' },
+  { id: 11, home: 'Austria', away: 'Jordan', homeFlag: 'at', awayFlag: 'jo', city: 'San Francisco', stadium: "Levi's Stadium", date: '2026-06-18', time: '15:00', stage: 'Group J', region: 'western' },
+  { id: 12, home: 'TBD', away: 'Paraguay', homeFlag: 'un', awayFlag: 'py', city: 'San Francisco', stadium: "Levi's Stadium", date: '2026-06-20', time: '21:00', stage: 'Group D', region: 'western' },
+  { id: 13, home: 'Jordan', away: 'Algeria', homeFlag: 'jo', awayFlag: 'dz', city: 'San Francisco', stadium: "Levi's Stadium", date: '2026-06-23', time: '18:00', stage: 'Group J', region: 'western' },
+  { id: 14, home: 'Paraguay', away: 'Australia', homeFlag: 'py', awayFlag: 'au', city: 'San Francisco', stadium: "Levi's Stadium", date: '2026-06-26', time: '22:00', stage: 'Group D', region: 'western' },
+  { id: 93, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'San Francisco', stadium: "Levi's Stadium", date: '2026-07-08', time: '15:00', stage: 'QF', region: 'western' },
+  // WESTERN - Los Angeles
+  { id: 15, home: 'USA', away: 'Paraguay', homeFlag: 'us', awayFlag: 'py', city: 'Los Angeles', stadium: 'SoFi Stadium', date: '2026-06-12', time: '21:00', stage: 'Group D', region: 'western' },
+  { id: 16, home: 'Iran', away: 'New Zealand', homeFlag: 'ir', awayFlag: 'nz', city: 'Los Angeles', stadium: 'SoFi Stadium', date: '2026-06-15', time: '18:00', stage: 'Group G', region: 'western' },
+  { id: 17, home: 'Switzerland', away: 'TBD', homeFlag: 'ch', awayFlag: 'un', city: 'Los Angeles', stadium: 'SoFi Stadium', date: '2026-06-21', time: '15:00', stage: 'Group B', region: 'western' },
+  { id: 18, home: 'Belgium', away: 'Iran', homeFlag: 'be', awayFlag: 'ir', city: 'Los Angeles', stadium: 'SoFi Stadium', date: '2026-06-21', time: '18:00', stage: 'Group G', region: 'western' },
+  { id: 19, home: 'TBD', away: 'USA', homeFlag: 'un', awayFlag: 'us', city: 'Los Angeles', stadium: 'SoFi Stadium', date: '2026-06-26', time: '22:00', stage: 'Group D', region: 'western' },
+  // CENTRAL - Guadalajara
+  { id: 20, home: 'South Korea', away: 'TBD', homeFlag: 'kr', awayFlag: 'un', city: 'Guadalajara', stadium: 'Estadio Akron', date: '2026-06-14', time: '18:00', stage: 'Group A', region: 'central' },
+  { id: 21, home: 'Mexico', away: 'South Korea', homeFlag: 'mx', awayFlag: 'kr', city: 'Guadalajara', stadium: 'Estadio Akron', date: '2026-06-20', time: '21:00', stage: 'Group A', region: 'central' },
+  { id: 22, home: 'Colombia', away: 'TBD', homeFlag: 'co', awayFlag: 'un', city: 'Guadalajara', stadium: 'Estadio Akron', date: '2026-06-24', time: '18:00', stage: 'Group K', region: 'central' },
+  { id: 23, home: 'Uruguay', away: 'Spain', homeFlag: 'uy', awayFlag: 'es', city: 'Guadalajara', stadium: 'Estadio Akron', date: '2026-06-27', time: '20:00', stage: 'Group H', region: 'central' },
+  // CENTRAL - Mexico City
+  { id: 24, home: 'Mexico', away: 'South Africa', homeFlag: 'mx', awayFlag: 'za', city: 'Mexico City', stadium: 'Estadio Azteca', date: '2026-06-11', time: '15:00', stage: 'Group A', region: 'central' },
+  { id: 25, home: 'Uzbekistan', away: 'Colombia', homeFlag: 'uz', awayFlag: 'co', city: 'Mexico City', stadium: 'Estadio Azteca', date: '2026-06-19', time: '21:00', stage: 'Group K', region: 'central' },
+  { id: 26, home: 'TBD', away: 'Mexico', homeFlag: 'un', awayFlag: 'mx', city: 'Mexico City', stadium: 'Estadio Azteca', date: '2026-06-26', time: '21:00', stage: 'Group A', region: 'central' },
+  { id: 79, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Mexico City', stadium: 'Estadio Azteca', date: '2026-07-03', time: '18:00', stage: 'R16', region: 'central' },
+  // CENTRAL - Monterrey
+  { id: 27, home: 'TBD', away: 'Tunisia', homeFlag: 'un', awayFlag: 'tn', city: 'Monterrey', stadium: 'Estadio BBVA', date: '2026-06-15', time: '22:00', stage: 'Group F', region: 'central' },
+  { id: 28, home: 'Tunisia', away: 'Japan', homeFlag: 'tn', awayFlag: 'jp', city: 'Monterrey', stadium: 'Estadio BBVA', date: '2026-06-20', time: '19:00', stage: 'Group F', region: 'central' },
+  { id: 29, home: 'South Africa', away: 'South Korea', homeFlag: 'za', awayFlag: 'kr', city: 'Monterrey', stadium: 'Estadio BBVA', date: '2026-06-26', time: '21:00', stage: 'Group A', region: 'central' },
+  // CENTRAL - Houston
+  { id: 30, home: 'Germany', away: 'Curaçao', homeFlag: 'de', awayFlag: 'cw', city: 'Houston', stadium: 'NRG Stadium', date: '2026-06-15', time: '13:00', stage: 'Group E', region: 'central' },
+  { id: 31, home: 'Portugal', away: 'TBD', homeFlag: 'pt', awayFlag: 'un', city: 'Houston', stadium: 'NRG Stadium', date: '2026-06-18', time: '18:00', stage: 'Group K', region: 'central' },
+  { id: 32, home: 'Netherlands', away: 'TBD', homeFlag: 'nl', awayFlag: 'un', city: 'Houston', stadium: 'NRG Stadium', date: '2026-06-19', time: '16:00', stage: 'Group F', region: 'central' },
+  { id: 33, home: 'Portugal', away: 'Uzbekistan', homeFlag: 'pt', awayFlag: 'uz', city: 'Houston', stadium: 'NRG Stadium', date: '2026-06-23', time: '21:00', stage: 'Group K', region: 'central' },
+  { id: 34, home: 'Cabo Verde', away: 'Saudi Arabia', homeFlag: 'cv', awayFlag: 'sa', city: 'Houston', stadium: 'NRG Stadium', date: '2026-06-27', time: '17:00', stage: 'Group H', region: 'central' },
+  { id: 73, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Houston', stadium: 'NRG Stadium', date: '2026-07-03', time: '15:00', stage: 'R16', region: 'central' },
+  // CENTRAL - Dallas
+  { id: 35, home: 'Netherlands', away: 'Japan', homeFlag: 'nl', awayFlag: 'jp', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-06-14', time: '16:00', stage: 'Group F', region: 'central' },
+  { id: 36, home: 'England', away: 'Croatia', homeFlag: 'gb-eng', awayFlag: 'hr', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-06-19', time: '21:00', stage: 'Group L', region: 'central' },
+  { id: 37, home: 'Argentina', away: 'Austria', homeFlag: 'ar', awayFlag: 'at', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-06-21', time: '21:00', stage: 'Group J', region: 'central' },
+  { id: 38, home: 'Japan', away: 'TBD', homeFlag: 'jp', awayFlag: 'un', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-06-24', time: '22:00', stage: 'Group F', region: 'central' },
+  { id: 39, home: 'Jordan', away: 'Argentina', homeFlag: 'jo', awayFlag: 'ar', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-06-27', time: '22:00', stage: 'Group J', region: 'central' },
+  { id: 83, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-07-06', time: '19:00', stage: 'R16', region: 'central' },
+  { id: 97, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Dallas', stadium: 'AT&T Stadium', date: '2026-07-14', time: '17:00', stage: 'Semi-Final', region: 'central' },
+  // CENTRAL - Kansas City
+  { id: 40, home: 'Argentina', away: 'Algeria', homeFlag: 'ar', awayFlag: 'dz', city: 'Kansas City', stadium: 'Arrowhead Stadium', date: '2026-06-17', time: '21:00', stage: 'Group J', region: 'central' },
+  { id: 41, home: 'Ecuador', away: 'Curaçao', homeFlag: 'ec', awayFlag: 'cw', city: 'Kansas City', stadium: 'Arrowhead Stadium', date: '2026-06-21', time: '16:00', stage: 'Group E', region: 'central' },
+  { id: 42, home: 'Tunisia', away: 'Netherlands', homeFlag: 'tn', awayFlag: 'nl', city: 'Kansas City', stadium: 'Arrowhead Stadium', date: '2026-06-24', time: '19:00', stage: 'Group F', region: 'central' },
+  { id: 43, home: 'Algeria', away: 'Austria', homeFlag: 'dz', awayFlag: 'at', city: 'Kansas City', stadium: 'Arrowhead Stadium', date: '2026-06-27', time: '22:00', stage: 'Group J', region: 'central' },
+  { id: 95, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Kansas City', stadium: 'Arrowhead Stadium', date: '2026-07-12', time: '12:00', stage: 'Quarter-Final', region: 'central' },
+  // CENTRAL - Atlanta
+  { id: 44, home: 'Spain', away: 'Cabo Verde', homeFlag: 'es', awayFlag: 'cv', city: 'Atlanta', stadium: 'Mercedes-Benz Stadium', date: '2026-06-17', time: '12:00', stage: 'Group H', region: 'central' },
+  { id: 45, home: 'TBD', away: 'South Africa', homeFlag: 'un', awayFlag: 'za', city: 'Atlanta', stadium: 'Mercedes-Benz Stadium', date: '2026-06-20', time: '18:00', stage: 'Group A', region: 'central' },
+  { id: 46, home: 'Spain', away: 'Saudi Arabia', homeFlag: 'es', awayFlag: 'sa', city: 'Atlanta', stadium: 'Mercedes-Benz Stadium', date: '2026-06-22', time: '12:00', stage: 'Group H', region: 'central' },
+  { id: 47, home: 'Morocco', away: 'Haiti', homeFlag: 'ma', awayFlag: 'ht', city: 'Atlanta', stadium: 'Mercedes-Benz Stadium', date: '2026-06-24', time: '15:00', stage: 'Group C', region: 'central' },
+  { id: 48, home: 'Uzbekistan', away: 'TBD', homeFlag: 'uz', awayFlag: 'un', city: 'Atlanta', stadium: 'Mercedes-Benz Stadium', date: '2026-06-27', time: '19:30', stage: 'Group K', region: 'central' },
+  { id: 86, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Atlanta', stadium: 'Mercedes-Benz Stadium', date: '2026-07-07', time: '17:00', stage: 'R16', region: 'central' },
+  // EASTERN - Toronto
+  { id: 49, home: 'Canada', away: 'TBD', homeFlag: 'ca', awayFlag: 'un', city: 'Toronto', stadium: 'BMO Field', date: '2026-06-13', time: '15:00', stage: 'Group B', region: 'eastern' },
+  { id: 50, home: 'Ghana', away: 'Panama', homeFlag: 'gh', awayFlag: 'pa', city: 'Toronto', stadium: 'BMO Field', date: '2026-06-18', time: '19:00', stage: 'Group L', region: 'eastern' },
+  { id: 51, home: 'Germany', away: "Côte d'Ivoire", homeFlag: 'de', awayFlag: 'ci', city: 'Toronto', stadium: 'BMO Field', date: '2026-06-21', time: '13:00', stage: 'Group E', region: 'eastern' },
+  { id: 52, home: 'Panama', away: 'Croatia', homeFlag: 'pa', awayFlag: 'hr', city: 'Toronto', stadium: 'BMO Field', date: '2026-06-24', time: '16:00', stage: 'Group L', region: 'eastern' },
+  { id: 53, home: 'Senegal', away: 'TBD', homeFlag: 'sn', awayFlag: 'un', city: 'Toronto', stadium: 'BMO Field', date: '2026-06-27', time: '17:00', stage: 'Group I', region: 'eastern' },
+  // EASTERN - Boston
+  { id: 54, home: 'Haiti', away: 'Scotland', homeFlag: 'ht', awayFlag: 'gb-sct', city: 'Boston', stadium: 'Gillette Stadium', date: '2026-06-14', time: '21:00', stage: 'Group C', region: 'eastern' },
+  { id: 55, home: 'TBD', away: 'Norway', homeFlag: 'un', awayFlag: 'no', city: 'Boston', stadium: 'Gillette Stadium', date: '2026-06-18', time: '18:00', stage: 'Group I', region: 'eastern' },
+  { id: 56, home: 'Scotland', away: 'Morocco', homeFlag: 'gb-sct', awayFlag: 'ma', city: 'Boston', stadium: 'Gillette Stadium', date: '2026-06-21', time: '18:00', stage: 'Group C', region: 'eastern' },
+  { id: 57, home: 'England', away: 'Ghana', homeFlag: 'gb-eng', awayFlag: 'gh', city: 'Boston', stadium: 'Gillette Stadium', date: '2026-06-24', time: '16:00', stage: 'Group L', region: 'eastern' },
+  { id: 58, home: 'Norway', away: 'France', homeFlag: 'no', awayFlag: 'fr', city: 'Boston', stadium: 'Gillette Stadium', date: '2026-06-27', time: '15:00', stage: 'Group I', region: 'eastern' },
+  { id: 89, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Boston', stadium: 'Gillette Stadium', date: '2026-07-07', time: '20:00', stage: 'R16', region: 'eastern' },
+  // EASTERN - Philadelphia
+  { id: 59, home: "Côte d'Ivoire", away: 'Ecuador', homeFlag: 'ci', awayFlag: 'ec', city: 'Philadelphia', stadium: 'Lincoln Financial Field', date: '2026-06-15', time: '19:00', stage: 'Group E', region: 'eastern' },
+  { id: 60, home: 'Brazil', away: 'Haiti', homeFlag: 'br', awayFlag: 'ht', city: 'Philadelphia', stadium: 'Lincoln Financial Field', date: '2026-06-21', time: '21:00', stage: 'Group C', region: 'eastern' },
+  { id: 61, home: 'France', away: 'TBD', homeFlag: 'fr', awayFlag: 'un', city: 'Philadelphia', stadium: 'Lincoln Financial Field', date: '2026-06-22', time: '21:00', stage: 'Group I', region: 'eastern' },
+  { id: 62, home: 'Curaçao', away: "Côte d'Ivoire", homeFlag: 'cw', awayFlag: 'ci', city: 'Philadelphia', stadium: 'Lincoln Financial Field', date: '2026-06-25', time: '16:00', stage: 'Group E', region: 'eastern' },
+  { id: 63, home: 'Croatia', away: 'Ghana', homeFlag: 'hr', awayFlag: 'gh', city: 'Philadelphia', stadium: 'Lincoln Financial Field', date: '2026-06-27', time: '17:00', stage: 'Group L', region: 'eastern' },
+  { id: 74, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Philadelphia', stadium: 'Lincoln Financial Field', date: '2026-07-01', time: '16:30', stage: 'R32', region: 'eastern' },
+  // EASTERN - New York
+  { id: 64, home: 'Brazil', away: 'Morocco', homeFlag: 'br', awayFlag: 'ma', city: 'New York', stadium: 'MetLife Stadium', date: '2026-06-14', time: '18:00', stage: 'Group C', region: 'eastern' },
+  { id: 65, home: 'France', away: 'Senegal', homeFlag: 'fr', awayFlag: 'sn', city: 'New York', stadium: 'MetLife Stadium', date: '2026-06-17', time: '15:00', stage: 'Group I', region: 'eastern' },
+  { id: 66, home: 'Norway', away: 'Senegal', homeFlag: 'no', awayFlag: 'sn', city: 'New York', stadium: 'MetLife Stadium', date: '2026-06-23', time: '15:00', stage: 'Group I', region: 'eastern' },
+  { id: 67, home: 'Ecuador', away: 'Germany', homeFlag: 'ec', awayFlag: 'de', city: 'New York', stadium: 'MetLife Stadium', date: '2026-06-25', time: '16:00', stage: 'Group E', region: 'eastern' },
+  { id: 68, home: 'Panama', away: 'England', homeFlag: 'pa', awayFlag: 'gb-eng', city: 'New York', stadium: 'MetLife Stadium', date: '2026-06-27', time: '17:00', stage: 'Group L', region: 'eastern' },
+  { id: 76, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'New York', stadium: 'MetLife Stadium', date: '2026-07-02', time: '16:00', stage: 'R32', region: 'eastern' },
+  { id: 99, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'New York', stadium: 'MetLife Stadium', date: '2026-07-15', time: '17:00', stage: 'Semi-Final', region: 'eastern' },
+  { id: 104, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'New York', stadium: 'MetLife Stadium', date: '2026-07-19', time: '15:00', stage: 'Final', region: 'eastern' },
+  // EASTERN - Miami
+  { id: 69, home: 'Saudi Arabia', away: 'Uruguay', homeFlag: 'sa', awayFlag: 'uy', city: 'Miami', stadium: 'Hard Rock Stadium', date: '2026-06-16', time: '18:00', stage: 'Group H', region: 'eastern' },
+  { id: 70, home: 'Uruguay', away: 'Cabo Verde', homeFlag: 'uy', awayFlag: 'cv', city: 'Miami', stadium: 'Hard Rock Stadium', date: '2026-06-22', time: '18:00', stage: 'Group H', region: 'eastern' },
+  { id: 71, home: 'Scotland', away: 'Brazil', homeFlag: 'gb-sct', awayFlag: 'br', city: 'Miami', stadium: 'Hard Rock Stadium', date: '2026-06-25', time: '18:00', stage: 'Group C', region: 'eastern' },
+  { id: 72, home: 'Colombia', away: 'Portugal', homeFlag: 'co', awayFlag: 'pt', city: 'Miami', stadium: 'Hard Rock Stadium', date: '2026-06-27', time: '19:30', stage: 'Group K', region: 'eastern' },
+  { id: 91, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Miami', stadium: 'Hard Rock Stadium', date: '2026-07-08', time: '20:00', stage: 'R16', region: 'eastern' },
+  { id: 103, home: 'TBD', away: 'TBD', homeFlag: 'un', awayFlag: 'un', city: 'Miami', stadium: 'Hard Rock Stadium', date: '2026-07-18', time: '17:00', stage: '3rd Place', region: 'eastern' },
+];
+
+// Get flag URL from country code
+function getFlag(code) {
+  if (code === 'un') return 'https://flagcdn.com/w80/un.png';
+  return `https://flagcdn.com/w80/${code}.png`;
+}
+
+// Region and City data
+const regionData = {
+  western: { name: 'Western', cities: ['Vancouver', 'Seattle', 'San Francisco', 'Los Angeles'] },
+  central: { name: 'Central', cities: ['Guadalajara', 'Mexico City', 'Monterrey', 'Houston', 'Dallas', 'Kansas City', 'Atlanta'] },
+  eastern: { name: 'Eastern', cities: ['Miami', 'Toronto', 'Boston', 'Philadelphia', 'New York'] }
+};
+
+// State
+let selectedRegions = new Set();
+let selectedCities = new Set();
+let selectedMatchIds = new Set();
+let dateMode = 'all';
+let currentPage = 1;
+const matchesPerPage = 20;
+let filteredMatchesGlobal = [];
+
+// Get dates that already have a selected match
+function getSelectedDates() {
+  const dates = new Set();
+  selectedMatchIds.forEach(matchId => {
+    const match = matchDatabase.find(m => m.id === matchId);
+    if (match) {
+      dates.add(match.date);
+    }
+  });
+  return dates;
+}
+
+// Check if a match can be selected
+function canSelectMatch(matchId) {
+  const match = matchDatabase.find(m => m.id === matchId);
+  if (!match) return false;
+  if (selectedMatchIds.has(matchId)) return true;
+  const selectedDates = getSelectedDates();
+  return !selectedDates.has(match.date);
+}
+
+// Toggle region selection
+function toggleRegion(card) {
+  const region = card.dataset.region;
+  if (selectedRegions.has(region)) {
+    selectedRegions.delete(region);
+    card.classList.remove('selected');
+    regionData[region].cities.forEach(city => selectedCities.delete(city));
+  } else {
+    selectedRegions.add(region);
+    card.classList.add('selected');
+    regionData[region].cities.forEach(city => selectedCities.add(city));
+  }
+  currentPage = 1;
+  updateCitySelection();
+  updateDateSelection();
+  filterMatches();
+  updateSummary();
+  updateSteps();
+}
+
+// Update city selection UI
+function updateCitySelection() {
+  const container = document.getElementById('citySelection');
+  const groupsContainer = document.getElementById('cityGroups');
+  if (selectedRegions.size === 0) {
+    container.classList.remove('visible');
+    return;
+  }
+  container.classList.add('visible');
+  groupsContainer.innerHTML = '';
+  selectedRegions.forEach(region => {
+    const group = document.createElement('div');
+    group.className = `city-group ${region}`;
+    group.innerHTML = `
+      <div class="city-group-header">
+        <div class="city-group-indicator"></div>
+        <span class="city-group-name">${regionData[region].name} Region</span>
+      </div>
+      <div class="city-chips">
+        ${regionData[region].cities.map(city => `
+          <div class="city-chip ${selectedCities.has(city) ? 'selected' : ''}" onclick="toggleCity('${city}')">
+            <div class="city-chip-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            ${city}
+          </div>
+        `).join('')}
+      </div>
+    `;
+    groupsContainer.appendChild(group);
+  });
+}
+
+// Toggle city selection
+function toggleCity(city) {
+  if (selectedCities.has(city)) {
+    selectedCities.delete(city);
+  } else {
+    selectedCities.add(city);
+  }
+  currentPage = 1;
+  updateCitySelection();
+  filterMatches();
+  updateSummary();
+}
+
+// Update date selection visibility
+function updateDateSelection() {
+  document.getElementById('dateSelection').classList.toggle('visible', selectedRegions.size > 0);
+}
+
+// Set date mode
+function setDateMode(mode) {
+  dateMode = mode;
+  document.querySelectorAll('.date-toggle-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('dateRangeInputs').classList.toggle('visible', mode === 'custom');
+  currentPage = 1;
+  filterMatches();
+}
+
+// Format date for display (short)
+function formatDate(dateStr) {
+  const date = new Date(dateStr + 'T12:00:00');
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+// Format date for display (full)
+function formatDateFull(dateStr) {
+  const date = new Date(dateStr + 'T12:00:00');
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// Filter and display matches
+function filterMatches() {
+  const container = document.getElementById('matchGridContainer');
+  const grid = document.getElementById('matchGrid');
+  const countEl = document.getElementById('matchCountNum');
+  const infoMessage = document.getElementById('selectionInfoMessage');
+  const pagination = document.getElementById('pagination');
+
+  if (selectedCities.size === 0) {
+    container.style.display = 'none';
+    return;
+  }
+
+  container.style.display = 'block';
+
+  let filteredMatches = matchDatabase.filter(match => selectedCities.has(match.city));
+
+  if (dateMode === 'custom') {
+    const dateFrom = document.getElementById('dateFrom').value;
+    const dateTo = document.getElementById('dateTo').value;
+    filteredMatches = filteredMatches.filter(m => m.date >= dateFrom && m.date <= dateTo);
+  }
+
+  filteredMatches.sort((a, b) => new Date(a.date) - new Date(b.date));
+  filteredMatchesGlobal = filteredMatches;
+
+  countEl.textContent = filteredMatches.length;
+
+  const totalPages = Math.ceil(filteredMatches.length / matchesPerPage);
+  const startIndex = (currentPage - 1) * matchesPerPage;
+  const endIndex = startIndex + matchesPerPage;
+  const paginatedMatches = filteredMatches.slice(startIndex, endIndex);
+
+  const selectedDates = getSelectedDates();
+
+  grid.innerHTML = paginatedMatches.map(match => {
+    const isSelected = selectedMatchIds.has(match.id);
+    const isDisabled = !isSelected && selectedDates.has(match.date);
+    
+    return `
+      <div class="match-card ${isSelected ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}" 
+           onclick="${isDisabled ? '' : `toggleMatch(${match.id})`}" 
+           data-match-id="${match.id}" 
+           data-date="${match.date}">
+        <div class="match-card-checkbox"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+        <div class="match-header">
+          <span class="match-stage">${match.stage}</span>
+          <span class="match-number">M${match.id}</span>
+        </div>
+        <div class="match-teams">
+          <div class="match-team">
+            <div class="match-team-flag"><img src="${getFlag(match.homeFlag)}" alt="${match.home}"></div>
+            <span class="match-team-name">${match.home}</span>
+          </div>
+          <span class="match-vs">VS</span>
+          <div class="match-team">
+            <div class="match-team-flag"><img src="${getFlag(match.awayFlag)}" alt="${match.away}"></div>
+            <span class="match-team-name">${match.away}</span>
+          </div>
+        </div>
+        <div class="match-info">
+          <div class="match-date">${formatDateFull(match.date)}</div>
+          <div class="match-venue">${match.stadium}, ${match.city}</div>
+        </div>
+        <span class="same-day-locked">Another match selected</span>
+      </div>
+    `;
+  }).join('');
+
+  updatePagination(totalPages, filteredMatches.length);
+  infoMessage.classList.toggle('visible', selectedMatchIds.size > 0);
+  updateSteps();
+}
+
+// Update pagination UI
+function updatePagination(totalPages, totalMatches) {
+  const pagination = document.getElementById('pagination');
+  const numbersContainer = document.getElementById('paginationNumbers');
+  const prevBtn = document.getElementById('prevPageBtn');
+  const nextBtn = document.getElementById('nextPageBtn');
+  const infoEl = document.getElementById('paginationInfo');
+
+  if (totalPages <= 1) {
+    pagination.style.display = 'none';
+    return;
+  }
+
+  pagination.style.display = 'flex';
+
+  prevBtn.disabled = currentPage === 1;
+  nextBtn.disabled = currentPage === totalPages;
+
+  let numbersHTML = '';
+  const maxVisiblePages = 5;
+  let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+  let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+  if (endPage - startPage + 1 < maxVisiblePages) {
+    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+  }
+
+  if (startPage > 1) {
+    numbersHTML += `<div class="pagination-number" onclick="goToPage(1)">1</div>`;
+    if (startPage > 2) {
+      numbersHTML += `<span style="color: rgba(255,255,255,0.3); padding: 0 0.25rem;">...</span>`;
+    }
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
+    numbersHTML += `<div class="pagination-number ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</div>`;
+  }
+
+  if (endPage < totalPages) {
+    if (endPage < totalPages - 1) {
+      numbersHTML += `<span style="color: rgba(255,255,255,0.3); padding: 0 0.25rem;">...</span>`;
+    }
+    numbersHTML += `<div class="pagination-number" onclick="goToPage(${totalPages})">${totalPages}</div>`;
+  }
+
+  numbersContainer.innerHTML = numbersHTML;
+
+  const startItem = (currentPage - 1) * matchesPerPage + 1;
+  const endItem = Math.min(currentPage * matchesPerPage, totalMatches);
+  infoEl.textContent = `${startItem}-${endItem} of ${totalMatches}`;
+}
+
+// Change page
+function changePage(direction) {
+  const totalPages = Math.ceil(filteredMatchesGlobal.length / matchesPerPage);
+  const newPage = currentPage + direction;
+  if (newPage >= 1 && newPage <= totalPages) {
+    currentPage = newPage;
+    filterMatches();
+    document.getElementById('matchGridContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+// Go to specific page
+function goToPage(page) {
+  currentPage = page;
+  filterMatches();
+  document.getElementById('matchGridContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Toggle match selection
+function toggleMatch(matchId) {
+  const match = matchDatabase.find(m => m.id === matchId);
+  if (!match) return;
+
+  if (selectedMatchIds.has(matchId)) {
+    selectedMatchIds.delete(matchId);
+  } else {
+    if (!canSelectMatch(matchId)) {
+      return;
+    }
+    selectedMatchIds.add(matchId);
+  }
+
+  filterMatches();
+  updateSummary();
+  updateFormPreview();
+}
+
+// Select all matches (one per day)
+function selectAllMatches() {
+  const visibleCards = Array.from(document.querySelectorAll('.match-card'));
+  const allCurrentlySelected = visibleCards.filter(c => !c.classList.contains('disabled')).every(card => card.classList.contains('selected'));
+
+  if (allCurrentlySelected) {
+    visibleCards.forEach(card => {
+      const id = parseInt(card.dataset.matchId);
+      selectedMatchIds.delete(id);
+    });
+  } else {
+    const visibleMatches = [];
+    visibleCards.forEach(card => {
+      const id = parseInt(card.dataset.matchId);
+      const match = matchDatabase.find(m => m.id === id);
+      if (match) visibleMatches.push(match);
+    });
+
+    const dateGroups = {};
+    visibleMatches.forEach(match => {
+      if (!dateGroups[match.date]) {
+        dateGroups[match.date] = [];
+      }
+      dateGroups[match.date].push(match);
+    });
+
+    Object.keys(dateGroups).forEach(date => {
+      const matchesOnDate = dateGroups[date];
+      const alreadySelectedOnDate = matchesOnDate.some(m => selectedMatchIds.has(m.id));
+      
+      if (!alreadySelectedOnDate && matchesOnDate.length > 0) {
+        selectedMatchIds.add(matchesOnDate[0].id);
+      }
+    });
+  }
+
+  filterMatches();
+  updateSummary();
+  updateFormPreview();
+}
+
+// Update summary bar
+function updateSummary() {
+  document.getElementById('selectedRegions').textContent = selectedRegions.size;
+  
+  const citiesFromSelectedMatches = new Set();
+  selectedMatchIds.forEach(matchId => {
+    const match = matchDatabase.find(m => m.id === matchId);
+    if (match) {
+      citiesFromSelectedMatches.add(match.city);
+    }
+  });
+  document.getElementById('selectedCities').textContent = citiesFromSelectedMatches.size;
+  document.getElementById('selectedMatches').textContent = selectedMatchIds.size;
+  document.getElementById('continueBtn').disabled = selectedMatchIds.size === 0;
+}
+
+// Update step indicators
+function updateSteps() {
+  const steps = document.querySelectorAll('.builder-step');
+  
+  steps[0].classList.toggle('completed', selectedRegions.size > 0);
+  steps[0].classList.toggle('active', selectedRegions.size === 0);
+  
+  steps[1].classList.toggle('completed', selectedCities.size > 0);
+  steps[1].classList.toggle('active', selectedRegions.size > 0 && selectedCities.size === 0);
+  
+  const matchGridVisible = document.getElementById('matchGridContainer').style.display === 'block';
+  steps[2].classList.toggle('completed', matchGridVisible);
+  steps[2].classList.toggle('active', selectedCities.size > 0 && !matchGridVisible);
+  
+  steps[3].classList.toggle('completed', selectedMatchIds.size > 0);
+  steps[3].classList.toggle('active', matchGridVisible && selectedMatchIds.size === 0);
+}
+
+// Update form preview with selected matches
+function updateFormPreview() {
+  const previewContainer = document.getElementById('matchesPreview');
+  const previewMatches = document.getElementById('previewMatches');
+  const textArea = document.getElementById('selectedMatchesText');
+
+  if (selectedMatchIds.size === 0) {
+    previewContainer.style.display = 'none';
+    textArea.value = '';
+    return;
+  }
+
+  previewContainer.style.display = 'block';
+
+  const selectedMatches = matchDatabase.filter(m => selectedMatchIds.has(m.id));
+  selectedMatches.sort((a, b) => new Date(a.date) - new Date(b.date));
+  
+  previewMatches.innerHTML = selectedMatches.map(m => 
+    `<span class="preview-match-chip">${m.home} vs ${m.away} · ${formatDate(m.date)}</span>`
+  ).join('');
+
+  textArea.value = selectedMatches.map(m => 
+    `${m.home} vs ${m.away} - ${m.city} (${m.stadium}) - ${formatDate(m.date)} ${m.time} ET - ${m.stage}`
+  ).join('\n');
+}
+
+// Scroll to form section
+function scrollToForm() {
+  document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Success Modal Functions
+function createSuccessModal() {
+  const modalHTML = `
+    <div id="successModal" class="success-modal">
+      <div class="success-modal-overlay"></div>
+      <div class="success-modal-content">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="16 10 11 15 8 12"></polyline>
+          </svg>
+        </div>
+        <h2 class="success-title">Request Submitted Successfully</h2>
+        <p class="success-message">Thank you for choosing VARA5 for your World Cup journey.</p>
+        <p class="success-submessage">Our expert team will review your request and get back to you within <strong>24 hours</strong> with a personalized proposal.</p>
+        <button class="success-btn" onclick="closeSuccessModal()">Continue Exploring</button>
+      </div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+}
+
+function showSuccessModal() {
+  document.getElementById('successModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSuccessModal() {
+  document.getElementById('successModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Form Submission Handler
+document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const form = this;
+  const btn = form.querySelector('button[type="submit"]');
+  const originalBtnText = btn.innerHTML;
+  
+  // Validate match selection
+  if (selectedMatchIds.size === 0) {
+    alert('Please select at least one match');
+    document.getElementById('builder').scrollIntoView({ behavior: 'smooth' });
+    return;
+  }
+  
+  // Get selected regions as string
+  const regionsStr = Array.from(selectedRegions).map(r => regionData[r].name).join(', ');
+  
+  // Collect form data
+  const formData = {
+    formType: 'regional',
+    firstName: form.querySelector('input[placeholder="John"]').value.trim(),
+    lastName: form.querySelector('input[placeholder="Smith"]').value.trim(),
+    email: form.querySelector('input[type="email"]').value.trim(),
+    phone: form.querySelector('input[type="tel"]').value.trim() || 'Not provided',
+    guests: form.querySelector('select').value,
+    team: regionsStr, // Using team field for regions
+    packageDetails: document.getElementById('selectedMatchesText').value,
+    specialRequests: form.querySelectorAll('textarea')[1]?.value.trim() || ''
+  };
+  
+  // Show loading state
+  btn.innerHTML = `
+    <svg viewBox="0 0 24 24" style="animation: spin 1s linear infinite; width: 18px; height: 18px;">
+      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="30 70"></circle>
+    </svg>
+    Processing...
+  `;
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+  
+  try {
+    // Send to Google Apps Script
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+    
+    // Show success modal
+    showSuccessModal();
+    
+    // Reset button
+    btn.innerHTML = originalBtnText;
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    
+    // Reset form and state
+    form.reset();
+    selectedMatchIds.clear();
+    updateSummary();
+    updateFormPreview();
+    filterMatches();
+    
+  } catch (error) {
+    console.error('Submission error:', error);
+    
+    // Still show success (no-cors doesn't return response)
+    showSuccessModal();
+    
+    // Reset button
+    btn.innerHTML = originalBtnText;
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    
+    // Reset form and state
+    form.reset();
+    selectedMatchIds.clear();
+    updateSummary();
+    updateFormPreview();
+    filterMatches();
+  }
+});
+
+// Initialize
+createSuccessModal();
+
+// Preloader
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").classList.add("hidden");
+  }, 1800);
+});
+</script>
+</body>
+</html>

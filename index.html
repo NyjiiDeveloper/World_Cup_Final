@@ -384,18 +384,7 @@
         inset: 0;
         z-index: 0;
       }
-      /* Poster image - shows immediately */
-      .hero-bg-poster {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%);
-        z-index: 1;
-      }
       .hero-bg video {
-        position: absolute;
-        inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -404,14 +393,6 @@
         transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
           filter 0.8s ease;
         transform-origin: center;
-        z-index: 2;
-        /* HIDE VIDEO COMPLETELY until it's playing */
-        opacity: 0;
-        visibility: hidden;
-      }
-      .hero-bg video.is-playing {
-        opacity: 1;
-        visibility: visible;
       }
       .hero-overlay {
         position: absolute;
@@ -3819,11 +3800,9 @@
     </nav>
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <!-- Dark background shows immediately - NO play button ever -->
-        <div class="hero-bg-poster" id="heroBgPoster"></div>
-        <video autoplay muted loop playsinline webkit-playsinline preload="metadata" id="heroBgVideo">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto" id="heroBgVideo">
           <source
-            src="https://firebasestorage.googleapis.com/v0/b/worldcup-vara5-2bcc5.firebasestorage.app/o/original-47966F8C-B423-4B35-8C16-4EB9B14D0917%20(1).mp4?alt=media&token=60088f13-8e33-4e24-8472-6beb3faea9e7"
+            src="https://res.cloudinary.com/dnh5afyja/video/upload/v1768736469/video_compresed_ubc5yy.mp4"
             type="video/mp4"
           />
         </video>
@@ -4411,55 +4390,6 @@ India's first true luxury travel platform, offering the most personalized and ex
       </div>
     </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-      // =====================================================
-      // VIDEO AUTOPLAY FIX - HIDES PLAY BUTTON COMPLETELY
-      // =====================================================
-      (function() {
-        const video = document.getElementById('heroBgVideo');
-        const poster = document.getElementById('heroBgPoster');
-        if (!video) return;
-
-        function showVideo() {
-          video.classList.add('is-playing');
-        }
-
-        function tryPlay() {
-          const playPromise = video.play();
-          if (playPromise !== undefined) {
-            playPromise.then(showVideo).catch(function() {
-              // Autoplay blocked - poster stays visible, no play button shown
-            });
-          }
-        }
-
-        // When video starts playing, show it
-        video.addEventListener('playing', showVideo);
-        
-        // Try to play when ready
-        video.addEventListener('canplaythrough', tryPlay);
-        
-        // Also try on load
-        window.addEventListener('load', function() {
-          setTimeout(tryPlay, 100);
-        });
-
-        // Retry on user interaction
-        ['touchstart', 'click', 'scroll'].forEach(function(evt) {
-          document.addEventListener(evt, function handler() {
-            tryPlay();
-            if (!video.paused) {
-              document.removeEventListener(evt, handler);
-            }
-          }, { passive: true, once: false });
-        });
-
-        // Handle tab visibility
-        document.addEventListener('visibilitychange', function() {
-          if (!document.hidden && video.paused) tryPlay();
-        });
-      })();
-      // =====================================================
-
       window.addEventListener("load", () => {
         setTimeout(() => {
           document.getElementById("preloader").classList.add("hidden");

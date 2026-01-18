@@ -3800,9 +3800,9 @@
     </nav>
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <video autoplay muted loop playsinline id="heroBgVideo">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto" id="heroBgVideo">
           <source
-            src="https://res.cloudinary.com/dpqly9rlk/video/upload/v1768699067/original-47966F8C-B423-4B35-8C16-4EB9B14D0917_neqr6t.mp4"
+            src="https://firebasestorage.googleapis.com/v0/b/worldcup-vara5-2bcc5.firebasestorage.app/o/original-47966F8C-B423-4B35-8C16-4EB9B14D0917%20(1).mp4?alt=media&token=60088f13-8e33-4e24-8472-6beb3faea9e7"
             type="video/mp4"
           />
         </video>
@@ -4243,7 +4243,7 @@
           </div>
           <div class="contact-item-text">
             <span>Email</span>
-            <p>operations@vara5.com</p>
+            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94fbe4f1e6f5e0fdfbfae7d4e2f5e6f5a1baf7fbf9">[email&#160;protected]</a></p>
           </div>
         </div>
         <!-- <div class="contact-item">
@@ -4389,7 +4389,7 @@ India's first true luxury travel platform, offering the most personalized and ex
         <p>©2025 Vara5 Journeys Pvt. Ltd. All Rights Reserved. Confidential and Proprietary Information</p>
       </div>
     </footer>
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
       window.addEventListener("load", () => {
         setTimeout(() => {
           document.getElementById("preloader").classList.add("hidden");
@@ -4773,17 +4773,18 @@ async function animatePoint(point) {
     const cta = document.querySelector('.reality-cta');
     
     if (critical) {
-      critical.classList.add('visible');
+      setTimeout(() => {
+        critical.classList.add('visible');
+      }, 200);
     }
     
-    setTimeout(() => {
-      if (cta) {
+    if (cta) {
+      setTimeout(() => {
         cta.classList.add('visible');
-      }
-    }, 500);
+      }, 600);
+    }
   }
 });
-
     </script>
   </body>
 </html>

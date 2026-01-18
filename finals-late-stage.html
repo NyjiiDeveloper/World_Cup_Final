@@ -328,15 +328,6 @@
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(212, 168, 75, 0.3);
 }
-.section-tag-journey {
-      display: inline-block;
-      font-size: 1.4rem;
-      font-weight: 600;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
 <body>
@@ -365,13 +356,14 @@
     <div class="hero-content">
       <div class="hero-badge">Premium World Cup Experience</div>
       <h1 class="hero-title">Finals & Late-Stage<span>Witness History. Be Part of the Climax.</span></h1>
-      <p class="hero-subtitle">Experience the most anticipated matches of the 2026 World Cup. Quarter-Finals, Semi-Finals, and the Grand Final - all with premium hospitality access.</p>
+      <p class="hero-subtitle">Experience the most anticipated matches of the 2026 World Cup. Quarter-Finals, Semi-Finals, and the Grand Final — all with premium hospitality access.</p>
     </div>
   </section>
 
   <section class="about-section">
     <div class="about-inner">
-      <span class="section-tag-journey">What's Included</span>
+      <span class="section-tag">What's Included</span>
+      <h2 class="section-title">The Ultimate World Cup Experience</h2>
       <p class="section-subtitle">Late-stage packages deliver front-row access to football's biggest moments.</p>
       <div class="about-features">
         <div class="about-feature">
@@ -477,7 +469,7 @@
           <div class="package-includes">
             <div class="package-includes-title">Includes</div>
             <ul>
-              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>World Cup Final -- New York</li>
+              <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>World Cup Final — New York</li>
               <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Premium hospitality seating</li>
               <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>4 nights luxury hotel accommodation</li>
               <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Matchday transfers</li>
@@ -523,7 +515,8 @@
   <section class="form-section" id="form">
     <div class="form-inner">
       <div class="form-header">
-        <span class="section-tag-journey">Submit your Request</span>
+        <span class="section-tag">Request Your Package</span>
+        <h2 class="section-title">Secure Your Experience</h2>
         <p class="section-subtitle">Complete the form and our team will confirm availability within 24 hours.</p>
       </div>
       <form class="booking-form" id="bookingForm">
@@ -537,7 +530,7 @@
         </div>
         <div class="form-row">
           <div class="form-group"><label>Email *</label><input type="email" placeholder="john@example.com" required></div>
-          <div class="form-group"><label>Phone *</label><input type="tel" placeholder="+1 (555) 000-0000" required></div>
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+1 (555) 000-0000"></div>
         </div>
         <div class="form-group full"><label>Guests</label><select><option>1 Guest</option><option selected>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select></div>
         <div class="form-group full"><label>Package Details</label><textarea id="packageDetails" readonly placeholder="Select a package above..."></textarea></div>
@@ -621,6 +614,16 @@ function createSuccessModal() {
         <h2 class="success-title">Request Submitted Successfully</h2>
         <p class="success-message">Thank you for choosing VARA5 for your World Cup journey.</p>
         <p class="success-submessage">Our expert team will review your request and get back to you within <strong>24 hours</strong> with a personalized proposal.</p>
+        <div class="success-details">
+          <div class="success-detail-item">
+            <span class="success-detail-icon">📧</span>
+            <span>Your dedicated travel curator has received your request</span>
+          </div>
+          <div class="success-detail-item">
+            <span class="success-detail-icon">📞</span>
+            <span>Expect a call from our concierge team</span>
+          </div>
+        </div>
         <button class="success-btn" onclick="closeSuccessModal()">Continue Exploring</button>
       </div>
     </div>
